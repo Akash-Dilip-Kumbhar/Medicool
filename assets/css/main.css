@@ -7630,7 +7630,6 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .vl-blog-4-area .vl-blog-1-item .vl-blog-1-thumb img {
-    height: 100%;
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
@@ -10121,7 +10120,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .vl-footer4-section-area .footer-description-area img {
     width: 200px;
-    height: 44px;
+
     -o-object-fit: cover;
     object-fit: cover;
 }
@@ -10274,7 +10273,9 @@ only screen and (min-width: 768px) and (max-width: 991px),
 .vl-footer4-section-area .footer-widget-area .social-links li a {
     height: 36px;
     width: 36px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     transition: all 0.4s;
     border-radius: 50%;
     background: linear-gradient(118deg, #97A2FA 0.63%, #D9D5FD 85.25%);
@@ -15965,7 +15966,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .works4-section-area .img1 img {
-    height: 100%;
+height: 450px;
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
@@ -18835,6 +18836,16 @@ only screen and (min-width: 768px) and (max-width: 991px),
     opacity: 1;
     transform: translateY(0);
     transition: all 0.4s;
+}
+
+.team4-section-area .heading4.space-margin60 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team4-section-area .vl-section-title {
+    text-wrap: nowrap;
 }
 
 .team4-section-area {
