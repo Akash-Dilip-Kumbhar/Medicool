@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Premium UI Enhancements (Added by AI)
+   ========================================================================== */
+
+/* 1. Enhanced Button Transitions */
+.vl-btn4,
+.vl-btn3,
+.vl-btn1,
+.vl-btn2,
+.contact-btn {
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.vl-btn4:hover,
+.vl-btn3:hover,
+.vl-btn1:hover,
+.vl-btn2:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 2. Glassmorphism / Smooth Card Hovers */
+.service-single-box,
+.team-single-box,
+.blog-single-box,
+.case-single-box {
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: transform, box-shadow;
+}
+
+.service-single-box:hover,
+.team-single-box:hover,
+.blog-single-box:hover,
+.case-single-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(2, 1, 90, 0.08) !important;
+}
+
+/* 3. Image Loading Polish */
+img[loading="lazy"] {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* 4. Fix Inline Styles on Hero Area (moved from HTML) */
+.hero4-header-area {
+    position: relative;
+    z-index: 1;
+}
+
+.hero4-header-area .hreo4-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
