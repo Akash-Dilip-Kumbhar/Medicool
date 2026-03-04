@@ -107,6 +107,12 @@ img {
     max-height: 100%;
 }
 
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     font-family: var(--ztc-family-font1);
 }
@@ -2059,6 +2065,12 @@ body {
         padding: 0;
         margin-top: 30px;
     }
+
+    .about4-section-area .about4-heading .counter-boxarea {
+        text-align: center;
+        border: 1px solid var(--3-home-page-graycolors);
+    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -5061,9 +5073,17 @@ body {
 
 @media (max-width: 767px) {
     .hero4-section-area .hero-header {
-        padding: 0;
+        padding: 10px;
         top: 0;
         margin-bottom: 30px;
+    }
+
+    .heading4 p {
+        text-align: justify;
+    }
+
+    .btn-area1 {
+        justify-content: center;
     }
 }
 
@@ -6163,6 +6183,22 @@ only screen and (min-width: 768px) and (max-width: 991px),
 .vl-offcanvas-overlay-open {
     opacity: 0.7;
     visibility: visible;
+}
+
+.vl-offcanvas-toggle {
+    font-size: 28px;
+    background: transparent;
+    border: none;
+    color: var(--ztc-text-text-1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vl-offcanvas-toggle:hover {
+    color: var(--ztc-bg-bg-3);
 }
 
 .vl-offcanvas .vl-offcanvas-logo {
@@ -15966,7 +16002,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .works4-section-area .img1 img {
-height: 450px;
+    height: 450px;
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
