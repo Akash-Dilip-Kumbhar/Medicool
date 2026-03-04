@@ -1,0 +1,265 @@
+MEDICOOL HOSPITAL – PROJECT INFORMATION
+
+Hospital Name:
+Medicool Hospital
+
+Location:
+Kalewadi, Pimpri-Chinchwad, Pune, Maharashtra, India
+
+Full Address:
+JQ9V+H67, 111/12/4, Hedgewar Path, Shri Swami Samartha Colony,
+Kalewadi, Pimpri-Chinchwad, Maharashtra 411017
+
+Contact Number:
+098348 89938
+
+Industry:
+Healthcare – Multispeciality Hospital
+
+Website Type:
+Modern responsive hospital website built using HTML, CSS, Bootstrap and JavaScript.
+
+Design Theme:
+Clean modern medical design using white and blue color palette.
+
+Target Audience:
+Patients from Pimpri-Chinchwad, Pune and surrounding areas seeking advanced and affordable healthcare.
+
+Website Features Planned:
+
+* Modern responsive UI
+* Dark / Light mode toggle
+* Smooth scrolling using Lenis.js
+* Slider / carousel components
+* Scroll animations (GSAP or AOS)
+* Multi-language support (English, Hindi, Marathi)
+* SEO optimized structure
+* Doctor directory
+* Department showcase
+* Appointment call-to-action
+* Mobile friendly UI
+
+DIRECTORS
+
+Dr. Barkha Kukreja
+Director – Medicool Hospital
+Consultant General & Advanced Laparoscopic Surgeon
+Cosmetologist | Trichologist | Obesity Consultant
+
+Dr. Varsha Kukreja
+Director – Medicool Hospital
+Cosmetology & Aesthetic Specialist
+Skin Aesthetics | Trichology | Obesity Consultant
+
+ABOUT DR BARKHA KUKREJA
+
+Dr Barkha Kukreja is a Consultant General and Advanced Laparoscopic Surgeon, Cosmetologist, Trichologist and Obesity Consultant at Medicool Hospital in Kalewadi, Pune.
+
+She provides advanced, affordable and ethical treatment in the fields of General Surgery, Laparoscopic Surgery and Cosmetology with a strong commitment to helping every patient receive safe and effective medical care.
+
+Her expertise includes minimally invasive procedures, surgical treatments and aesthetic treatments that improve both health and quality of life.
+
+GENERAL SURGERY SERVICES
+
+Breast Care Clinic
+Treatment for breast disorders including breast lumps and breast cancer diagnosis and treatment.
+(स्तनाचे सर्व विकार, स्तनातील गांठ, स्तनाचा कर्करोग निदान व उपचार)
+
+Digestive and Abdominal Disorder Treatment
+Treatment for acidity, indigestion and constipation.
+(आम्लपित्त, अपचन, बद्धकोष्ठता)
+
+Gall Bladder Stone Treatment
+Diagnosis and treatment for gall bladder stones.
+(पित्ताशयाचे खडे)
+
+Abdominal Surgical Treatments
+Appendix surgery
+Hernia treatment
+Hydrocele treatment
+Circumcision surgery
+(अपेंडिक्स, पोट अथवा जांघेतील गाठ, अंडाशयाचे आजार)
+
+Minor Surgical Procedures
+Lipoma removal
+Cyst removal
+Corn removal
+Auroplasty (ear lobe surgery)
+(शरीरावरील गाठी, कुरूप, कानाच्या पाळी शस्त्रक्रिया)
+
+Advanced Proctology
+
+Piles Care Clinic
+Diagnosis and treatment for piles, constipation, anal itching and bleeding.
+(मुळव्याध, बद्धकोष्ठता, शौचाच्या जागेवरील खाज, रक्तस्त्राव)
+
+Advanced treatment for
+Piles
+Fissure
+Fistula
+Pilonidal Sinus
+(मुळव्याध, फिशर, भगंदर)
+
+Painless Laser and Stapler Surgery
+Modern painless laser and stapler surgical procedures.
+(अत्याधुनिक व वेदनारहित लेझर व स्टेपलर शस्त्रक्रिया)
+
+COSMETOLOGY SERVICES
+
+Botox & Fillers
+Mesotherapy
+Full Body Skin Lightening
+Mole / Tag / Wart Removal
+Hydrafacial
+Medifacial
+Fire & Ice Facial
+Vampire Facial
+Acne Treatment
+Chemical Peels
+Blackheads Removal
+Whiteheads Removal
+
+Hair and Trichology Treatments
+
+Laser Hair Reduction
+Beard Shaping
+Hair PRP Therapy
+Microneedling
+Growth Factor Concentrate
+Dandruff Treatment
+
+And many more advanced cosmetic procedures.
+
+MEDICAL SKILLS AND SPECIALIZATION
+
+Obesity Treatment
+Trichology
+General Surgery
+Plastic Surgery
+Laparoscopic Surgery
+Cosmetology
+Aesthetic Medicine
+Cosmetic Procedures
+Minimally Invasive Procedures
+
+HOSPITAL DEPARTMENTS
+
+General Surgery
+General Medicine
+Consultant Physician
+Paediatrics
+Orthopedics
+ENT (Ear Nose Throat)
+Obstetrics & Gynecology
+Pulmonology
+Pain Management
+Cardiology
+Nephrology
+Neurology
+Gastroenterology
+Gastro Surgery
+Plastic Surgery
+Urology
+Onco Surgery
+CVTS (Cardiovascular & Thoracic Surgery)
+Psychology
+Physiotherapy
+Cosmetology
+
+CONSULTANT DOCTORS
+
+General Surgery
+Dr Barkha Kukreja
+Dr Kanchan Waykole
+Dr Pavan Dharurkar
+Dr Haran Kamlakar
+
+Obstetrics & Gynecology
+Dr Amey Chugh
+Dr Parvin Choudhary
+Dr Archana Chandak
+Dr Shradha Galgali
+
+Consultant Physician
+Dr Manohar Ramnani
+
+General Medicine
+Dr Prasad Bagare
+
+Paediatrics
+Dr Swati Vispute
+Dr Rohan Kate
+Dr Aditya Thorat
+Dr Vinita Triya
+
+Orthopedics
+Dr Narendra Vaishnav
+
+ENT
+Dr Dheeraj Mishra
+Dr Shweta Rajput Jadhav
+Dr Rupali Ekbote
+
+Pain Management
+Dr Rinkush Tilokchandani
+
+Cardio Diabetic Consultant
+Dr Raj Panjwani
+
+Pulmonology
+Dr Rajkumar Nikalie
+
+Psychology
+Mrs Shilpa Ashwani
+
+SUPER SPECIALIST CONSULTANTS
+
+Cosmetology
+Dr Varsha Kukreja
+Dr Barkha Kukreja
+
+Plastic Surgery
+Dr Suraj Singh Chouhan
+
+Gastroenterology
+Dr Mrunmaya Panda
+
+Neurology
+Dr Sandeep Borse
+Dr Nilesh Nadkarni
+
+Nephrology
+Dr Tushar Warke
+
+Urology
+Dr Anurag Awasthi
+
+Cardiology
+Dr Kartik Bhosale
+Dr Pratik Wadhokar
+
+Gastro Surgery
+Dr Prakash Valse
+
+Onco Surgery
+Dr Prashant Chandra
+Dr Ashish Pokharkar
+
+CVTS
+Dr Sameer Chauhan
+
+Neurosurgery
+Dr Ashish Chugh
+Dr Rahul Patil
+
+Physiotherapy
+Dr Kiran Aswani
+
+MEDICAL PHILOSOPHY
+
+Medicool Hospital focuses on providing advanced, ethical and affordable healthcare to every patient.
+
+The hospital combines modern medical technology with compassionate patient care to ensure safe, effective and reliable treatment.
+
+Medicool Hospital aims to improve community health by offering high quality medical services with trust, transparency and patient-centered care.
+

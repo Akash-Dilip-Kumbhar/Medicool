@@ -3167,6 +3167,114 @@ body {
     opacity: 0;
 }
 
+/*===== DIRECTOR SECTION STARTS =======*/
+.director-section {
+    background-color: var(--ztc-bg-bg-4);
+    padding: 80px 0;
+    position: relative;
+}
+
+.director-card {
+    background: var(--ztc-bg-bg-1);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    padding: 0;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.director-card:hover {
+    transform: translateY(-5px);
+}
+
+.director-img-wrapper {
+    flex: 0 0 40%;
+    width: 450px;
+}
+
+.director-img-wrapper img {
+    width: 100%;   
+    object-fit: cover;
+    display: block;
+}
+
+.director-content {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding: 50px 40px;
+}
+
+.director-content .quote-icon {
+    font-size: 40px;
+    color: var(--ztc-text-text-13);
+    margin-bottom: 20px;
+}
+
+.director-content h3 {
+    font-size: var(--ztc-font-size-font-s32);
+    color: var(--ztc-text-text-11);
+    font-family: var(--ztc-family-font1);
+    font-weight: var(--ztc-weight-semibold);
+    margin-bottom: 5px;
+}
+
+.director-content h5 {
+    font-size: var(--ztc-font-size-font-s18);
+    color: var(--ztc-text-text-12);
+    font-family: var(--ztc-family-font1);
+    font-weight: var(--ztc-weight-medium);
+    margin-bottom: 5px;
+}
+
+.director-content h6 {
+    font-size: 15px;
+    color: var(--ztc-text-text-6);
+    font-family: var(--ztc-family-font2);
+    margin-bottom: 20px;
+    font-weight: var(--ztc-weight-regular);
+}
+
+.director-content p {
+    font-size: 16px;
+    color: var(--ztc-text-text-3);
+    font-family: var(--ztc-family-font2);
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.director-content .signature {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 28px;
+    color: var(--ztc-text-text-11);
+}
+
+@media (max-width: 991px) {
+    .director-card {
+        flex-direction: column;
+    }
+
+    .director-img-wrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .director-img-wrapper img {
+        aspect-ratio: 4/3;
+    }
+
+    .director-content {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 40px 20px;
+    }
+}
+
+/*===== DIRECTOR SECTION ENDS =======*/
+
 .service4-section-area {
     position: relative;
     z-index: 1;
