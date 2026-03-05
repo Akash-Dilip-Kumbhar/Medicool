@@ -1,70 +1,3 @@
-/*-----------------------------------------------------------------------------------
-
-Name:  Medicax- Health & Medical HTML Template
-Version: 1.0.0
-Description: Medicax- Health & Medical HTML Template
-Author: Vikiglab
-Author URI: https://themeforest.net/user/vikinglab/portfolio
-Location:
------------------------------------------------------------------------------------
-
-/************ TABLE OF CONTENTS ***************
-
-	-----------------
-    01 THEME CSS
-	-----------------
-		 Theme Default
-		 Common Classes
-		 Default Spacing
-
-	-----------------
-     02 COMPONENTS css
-	-----------------
-		 ABOUT CSS AREA
-		 MOBILE MENU CSS AREA
-		 SERVICE CSS AREA
-         HERO CSS AREA
-	----------------- 
-     03 LAYOUT CSS 
-	----------------- 
-		 PAGES 
-		 BLOG 
-		 HEADER 
-		 FOOTER 
-		 MENU 
-
-    --------------------------------- 
-	 04. MENU CSS 
-	---------------------------------
-       HEADER CSS AREA  
-
-	---------------------------------  
-	 05 BLOG CSS 
-	---------------------------------  
-       BLOG CSS AREA 
-
-	---------------------------------  
-	 06. FOOTER CSS 
-	---------------------------------  
-      FOOTER CSS AREA 
-
-	---------------------------------   
-	 07. PAGES CSS  
-	---------------------------------   
-       CHOOSE CSS AREA  
-       CONTACT CSS AREA   
-       CTA CSS AREA  
-       FAQ CSS AREA  
-       OTHERS CSS AREA STARTS  
-       PRICING CSS AREA  
-       PROEJCTS CSS AREA STARTS  
-       SKILLS CSS AREA STARTS 
-       TEAM CSS AREA 
-       TESTIMONIAL CSS AREA
-       WORK CSS AREA 
-       CASE STUDY CSS 
-
-**********************************************/
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap");
 
 a,
@@ -504,6 +437,10 @@ body {
     100% {
         transform: translatex(0);
     }
+}
+
+.text-justify {
+    text-align: justify;
 }
 
 :root {
@@ -2017,7 +1954,7 @@ body {
 .about4-section-area .about-images-area {
     position: relative;
     z-index: 1;
-    left: -50px;
+    height: 550px;
 }
 
 @media (max-width: 767px) {
@@ -2043,6 +1980,15 @@ body {
     position: absolute;
     top: 0;
     z-index: -1;
+}
+
+.about4-section-area .about-section-title {
+    font-size: 40px;
+    line-height: normal;
+}
+
+.about4-section-area .about-section-desc {
+    text-align: justify;
 }
 
 .about4-section-area .about4-heading .counter-boxarea {
@@ -3196,7 +3142,7 @@ body {
 }
 
 .director-img-wrapper img {
-    width: 100%;   
+    width: 100%;
     object-fit: cover;
     display: block;
 }
@@ -4095,6 +4041,7 @@ body {
     z-index: 1;
 }
 
+
 .service-all-details-area h3 {
     color: var(--ztc-text-text-11);
     font-family: var(--ztc-family-font1);
@@ -4303,7 +4250,6 @@ body {
 }
 
 .service-all-details-area .service-main-content-details .m-list-area {
-    padding-bottom: 48px;
     border-bottom: 1px solid #E8EAEC;
 }
 
@@ -5179,6 +5125,15 @@ body {
     top: -30px;
 }
 
+.hero4-section-area .hero-header .hero-title {
+    font-size: 40px;
+    line-height: normal;
+}
+
+.hero4-section-area .hero-header .hero-desc {
+    text-align: justify;
+}
+
 @media (max-width: 767px) {
     .hero4-section-area .hero-header {
         padding: 10px;
@@ -5244,12 +5199,11 @@ body {
 
 .hero4-section-area .hero4-images-area .bg-area .hero-bg2 {
     position: absolute;
-    height: 800px;
-    width: 800px;
-    max-width: 800px;
+
+    width: 100%;
     max-height: 800px;
     z-index: -1;
-    top: -110px;
+    top: -50px;
 }
 
 @media (max-width: 767px) {
@@ -5283,7 +5237,8 @@ body {
 .hero4-section-area .hero4-images-area .icons-area .icons2,
 .hero4-section-area .hero4-images-area .icons-area .icons3,
 .hero4-section-area .hero4-images-area .icons-area .icons4,
-.hero4-section-area .hero4-images-area .icons-area .icons5 {
+.hero4-section-area .hero4-images-area .icons-area .icons5,
+.hero4-section-area .hero4-images-area .icons-area .icons6 {
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.5);
     background: linear-gradient(118deg, #97A2FA 0.63%, #D9D5FD 85.25%);
@@ -5298,22 +5253,22 @@ body {
 
 .hero4-section-area .hero4-images-area .icons-area .icons1 {
     bottom: 30px;
-    left: 150px;
+    left: 0px;
 }
 
 .hero4-section-area .hero4-images-area .icons-area .icons2 {
     bottom: 40%;
-    left: 150px;
+    left: 0px;
 }
 
 .hero4-section-area .hero4-images-area .icons-area .icons3 {
     top: 50px;
-    left: 200px;
+    left: 50px;
 }
 
 .hero4-section-area .hero4-images-area .icons-area .icons4 {
     top: 50px;
-    right: -180px;
+    right: 50px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -5324,7 +5279,7 @@ body {
 
 .hero4-section-area .hero4-images-area .icons-area .icons5 {
     bottom: 40%;
-    right: -250px;
+    right: 0px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -5334,19 +5289,9 @@ body {
 }
 
 .hero4-section-area .hero4-images-area .icons-area .icons6 {
-    border-radius: 100px;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    background: linear-gradient(118deg, #97A2FA 0.63%, #D9D5FD 85.25%);
-    box-shadow: 0px 5px 12px 0px rgba(180, 170, 251, 0.4);
-    height: 100px;
-    width: 100px;
-    text-align: center;
-    line-height: 100px;
-    display: inline-block;
-    border-radius: 50%;
-    position: absolute;
+
     bottom: 30px;
-    right: -250px;
+    right: 0px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -5357,9 +5302,10 @@ body {
 
 .hero4-section-area .hero4-images-area .img1 {
     position: relative;
-    left: 80px;
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
 }
 
 @media (max-width: 767px) {
@@ -13373,59 +13319,72 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .homepage4-body .vl-hero-btn .btn-area1 .phone {
-    color: var(--ztc-text-text-11);
+    color: var(--ztc-text-text-1);
     font-family: var(--ztc-family-font1);
     font-size: var(--ztc-font-size-font-s16);
     font-style: normal;
     font-weight: var(--ztc-weight-semibold);
     line-height: 140%;
     display: inline-block;
-    transition: all 0.4s;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     border-radius: 100px;
-    background: rgba(255, 255, 255, 0.6);
+    background: var(--ztc-bg-bg-10);
     padding: 15px 12px;
     margin: 0 8px 0 0;
     position: relative;
     z-index: 1;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(2, 1, 90, 0.1);
+}
+
+.homepage4-body .vl-hero-btn .btn-area1 .phone::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    transition: all 0.7s ease;
+    z-index: -1;
+}
+
+.homepage4-body .vl-hero-btn .btn-area1 .phone:hover::before {
+    left: 150%;
 }
 
 .homepage4-body .vl-hero-btn .btn-area1 .phone:hover {
     color: var(--ztc-text-text-1);
-    transition: all 0.4s;
+    background: var(--ztc-bg-bg-11);
     transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(2, 1, 90, 0.3);
 }
 
-.homepage4-body .vl-hero-btn .btn-area1 .phone:hover svg {
-    filter: brightness(0) invert(1);
-    transition: all 0.4s;
+.homepage4-body .vl-hero-btn .btn-area1 .phone:hover i {
+    animation: phoneRing 0.5s ease-in-out infinite alternate;
 }
 
-.homepage4-body .vl-hero-btn .btn-area1 .phone:hover::after {
-    width: 100%;
-    left: 0;
-    transition: all 0.4s;
-    visibility: visible;
-    opacity: 1;
-}
+@keyframes phoneRing {
+    0% {
+        transform: rotate(0deg);
+    }
 
-.homepage4-body .vl-hero-btn .btn-area1 .phone::after {
-    position: absolute;
-    content: "";
-    height: 100%;
-    left: 50%;
-    top: 0;
-    transition: all 0.4s;
-    width: 10px;
-    background: var(--ztc-bg-bg-10);
-    border-radius: 50px;
-    z-index: -1;
-    visibility: hidden;
-    opacity: 0;
-}
+    25% {
+        transform: rotate(-10deg);
+    }
 
-.homepage4-body .vl-hero-btn .btn-area1 .phone svg {
-    margin: 0 4px 0 0;
-    transition: all 0.4s;
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .homepage4-body .header-sticky {
@@ -22194,7 +22153,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
     position: relative;
     z-index: 1;
     overflow: hidden;
-    background-image: url(assets/img/all-images/bg/bg5.png);
+    background-image: url('../img/all-images/cta/bg5.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22228,14 +22187,8 @@ only screen and (min-width: 768px) and (max-width: 991px),
     }
 }
 
-.cta4-section-area .cta-content-area h2 {
-    color: var(--ztc-text-text-1);
-}
 
-.cta4-section-area .cta-content-area p {
-    color: var(--ztc-text-text-1);
-    opacity: 70% !important;
-}
+
 
 .cta4-section-area .cta-content-area .btn-area1 .phone {
     color: var(--ztc-text-text-11);
@@ -25373,4 +25326,451 @@ only screen and (min-width: 768px) and (max-width: 991px),
 /*============= CASE STUDY CSS AREA ENDS ===============*/
 /*============= PRICING CSS AREA ===============*/
 /*============= PRICING CSS AREA ===============*/
+/*============= DOCTOR PROFILE PAGE CSS ===============*/
+
+/* Hero Banner */
+.doctor-profile-hero {
+    background: #F4F0FF;
+    padding: 100px 0 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.doctor-profile-hero .heading4 h5 {
+    margin-bottom: 0;
+}
+
+.doctor-profile-hero .vl-section-title {
+    color: var(--ztc-text-text-2);
+    font-family: var(--ztc-family-font1);
+    font-size: var(--ztc-font-size-font-s40);
+    font-weight: var(--ztc-weight-bold);
+    line-height: 50px;
+}
+
+/* Doctor Profile Section */
+.doctor-profile-section {
+    padding: 60px 0 40px;
+}
+
+/* Sidebar Card (Sticky) */
+.doctor-sidebar-card {
+    position: sticky;
+    top: 100px;
+    background: #F4F0FF;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(68, 22, 255, 0.08);
+}
+
+.doctor-sidebar-card .doctor-photo-wrapper {
+    background: #EDE8FF;
+    padding: 20px 20px 0;
+    text-align: center;
+    position: relative;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.doctor-sidebar-card .doctor-photo-wrapper img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.doctor-sidebar-content {
+    padding: 24px;
+}
+
+.doctor-sidebar-content .specialty {
+    color: var(--ztc-text-text-3);
+    font-family: var(--ztc-family-font1);
+    font-size: var(--ztc-font-size-font-s14);
+    font-weight: var(--ztc-weight-medium);
+    display: block;
+}
+
+.doctor-sidebar-content h3 {
+    color: var(--ztc-text-text-2);
+    font-family: var(--ztc-family-font1);
+    font-size: var(--ztc-font-size-font-s22);
+    font-weight: var(--ztc-weight-bold);
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+/* Contact List */
+.doctor-contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+}
+
+.doctor-contact-list li {
+    margin-bottom: 10px;
+}
+
+.doctor-contact-list li a {
+    color: var(--ztc-text-text-3);
+    font-family: var(--ztc-family-font1);
+    font-size: 13px;
+    font-weight: var(--ztc-weight-regular);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.doctor-contact-list li a i {
+    width: 18px;
+    color: var(--ztc-text-text-2);
+}
+
+.doctor-contact-list li a:hover {
+    color: var(--ztc-bg-bg-11);
+}
+
+/* Social List */
+.doctor-social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.doctor-social-list li a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--ztc-border-border-1);
+    color: var(--ztc-text-text-3);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.doctor-social-list li a:hover {
+    background: var(--ztc-bg-bg-11);
+    color: #fff;
+    border-color: var(--ztc-bg-bg-11);
+}
+
+.doctor-sidebar-content .btn-area1 .vl-btn4 {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Right Content Area */
+.doctor-detail-content {
+    padding-left: 20px;
+}
+
+.doctor-detail-content h2 {
+    color: var(--ztc-text-text-2);
+    font-family: var(--ztc-family-font1);
+    font-size: var(--ztc-font-size-font-s32);
+    font-weight: var(--ztc-weight-bold);
+    line-height: 40px;
+}
+
+.doctor-detail-content p {
+    color: var(--ztc-text-text-3);
+    font-family: var(--ztc-family-font1);
+    font-size: var(--ztc-font-size-font-s14);
+    font-weight: var(--ztc-weight-regular);
+    line-height: 24px;
+}
+
+.doctor-detail-content h3 {
+    color: var(--ztc-text-text-2);
+    font-family: var(--ztc-family-font1);
+    font-size: var(--ztc-font-size-font-s22);
+    font-weight: var(--ztc-weight-bold);
+    line-height: 28px;
+}
+
+/* Education List with check icons */
+.doctor-edu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.doctor-edu-list li {
+    color: var(--ztc-text-text-3);
+    font-family: var(--ztc-family-font1);
+    font-size: var(--ztc-font-size-font-s14);
+    font-weight: var(--ztc-weight-regular);
+    line-height: 22px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.doctor-edu-list li i {
+    color: var(--ztc-bg-bg-11);
+    font-size: 16px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.doctor-edu-list li span {
+    color: var(--ztc-text-text-3);
+    font-weight: var(--ztc-weight-medium);
+    opacity: 0.7;
+}
+
+/* Testimonial Card */
+.doctor-testimonial-card {
+    background: #F4F0FF;
+    border-radius: 16px;
+    padding: 30px;
+    margin-top: 0;
+    position: relative;
+}
+
+.doctor-testimonial-card .quote-icon {
+    margin-bottom: 16px;
+}
+
+.doctor-testimonial-card .quote-icon svg {
+    width: 48px;
+    height: 48px;
+}
+
+.testimonial-text {
+    color: var(--ztc-text-text-3);
+    font-family: var(--ztc-family-font1);
+    font-size: var(--ztc-font-size-font-s14);
+    font-weight: var(--ztc-weight-regular);
+    line-height: 24px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.author-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--ztc-bg-bg-11);
+}
+
+.author-info h6 {
+    color: var(--ztc-text-text-2);
+    font-family: var(--ztc-family-font1);
+    font-size: var(--ztc-font-size-font-s16);
+    font-weight: var(--ztc-weight-semibold);
+    margin-bottom: 2px;
+}
+
+.author-info span {
+    color: var(--ztc-text-text-3);
+    font-family: var(--ztc-family-font1);
+    font-size: var(--ztc-font-size-font-s12);
+    font-weight: var(--ztc-weight-regular);
+}
+
+.testimonial-nav {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 12px;
+}
+
+.prev-btn {
+    background: var(--ztc-bg-bg-11);
+    color: #fff;
+}
+
+.next-btn {
+    background: var(--ztc-bg-bg-11);
+    color: #fff;
+}
+
+.nav-btn:hover {
+    background: var(--ztc-text-text-2);
+    color: #fff;
+}
+
+/* Related Specialists */
+.related-specialists {
+    padding: 60px 0 80px;
+}
+
+.related-title {
+    color: var(--ztc-text-text-2);
+    font-family: var(--ztc-family-font1);
+    font-size: var(--ztc-font-size-font-s32);
+    font-weight: var(--ztc-weight-bold);
+    line-height: 40px;
+}
+
+.specialist-card {
+    text-align: center;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.specialist-card:hover {
+    transform: translateY(-5px);
+}
+
+.specialist-img {
+    background: #F4F0FF;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 20px 15px 0;
+    margin-bottom: 16px;
+}
+
+.specialist-img img {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px 12px 0 0;
+}
+
+.specialist-info h5 {
+    color: var(--ztc-text-text-2);
+    font-family: var(--ztc-family-font1);
+    font-size: var(--ztc-font-size-font-s16);
+    font-weight: var(--ztc-weight-bold);
+    margin-bottom: 4px;
+}
+
+.specialist-info span {
+    color: var(--ztc-text-text-3);
+    font-family: var(--ztc-family-font1);
+    font-size: var(--ztc-font-size-font-s14);
+    font-weight: var(--ztc-weight-regular);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .doctor-sidebar-card {
+        position: relative;
+        top: 0;
+        margin-bottom: 30px;
+    }
+
+    .doctor-detail-content {
+        padding-left: 0;
+    }
+
+    .doctor-testimonial-card {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .doctor-profile-hero {
+        padding: 90px 0 40px;
+    }
+
+    .doctor-profile-hero .vl-section-title {
+        font-size: var(--ztc-font-size-font-s28);
+        line-height: 36px;
+    }
+
+    .doctor-profile-section {
+        padding: 40px 0 30px;
+    }
+
+    .doctor-detail-content h2 {
+        font-size: var(--ztc-font-size-font-s24);
+        line-height: 32px;
+    }
+
+    .related-specialists {
+        padding: 40px 0 60px;
+    }
+
+    .related-title {
+        font-size: var(--ztc-font-size-font-s24);
+        line-height: 32px;
+    }
+
+    .specialist-img {
+        padding: 15px 10px 0;
+    }
+}
+
+/*============= BREADCRUMB CSS STARTS ===============*/
+.hero-header .bradecrumb-area {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 24px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.hero-header .bradecrumb-area a {
+    color: var(--ztc-text-text-11);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.hero-header .bradecrumb-area a:hover {
+    color: var(--ztc-bg-bg-11);
+}
+
+.hero-header .bradecrumb-area i {
+    color: var(--ztc-text-text-11);
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.hero-header .bradecrumb-area span {
+    color: var(--ztc-bg-bg-11);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*============= BREADCRUMB CSS ENDS ===============*/
+
+/*============= STICKY SIDEBAR CSS ===============*/
+.service-main-siderbar-area {
+    position: sticky;
+    top: 120px;
+    z-index: 10;
+}
+
+/*============= DOCTOR PROFILE PAGE CSS ENDS ===============*/
 /*# sourceMappingURL=main.css.map */
