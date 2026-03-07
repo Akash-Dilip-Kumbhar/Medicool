@@ -22177,13 +22177,15 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 @media (max-width: 767px) {
     .cta4-section-area .cta-content-area {
-        padding: 0;
+        padding: 10px;
+        text-align: center;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .cta4-section-area .cta-content-area {
-        padding: 0;
+        padding: 10px;
+        text-align: center;
     }
 }
 
@@ -22285,11 +22287,17 @@ only screen and (min-width: 768px) and (max-width: 991px),
     bottom: 0;
 }
 
+.cta4-section-area .cta-circle-area .img1 {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+
 .cta4-section-area .cta-circle-area .img1 img {
     position: relative;
     top: 0;
     height: 100%;
-    width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
 }
@@ -22298,11 +22306,19 @@ only screen and (min-width: 768px) and (max-width: 991px),
     .cta4-section-area .cta-circle-area .img1 img {
         left: 0;
     }
+
+    .cta4-section-area .cta-circle-area .img1 {
+        height: 400px;
+    }
 }
 
 @media (max-width: 767px) {
     .cta4-section-area .cta-circle-area .img1 img {
         left: 0;
+    }
+
+    .cta4-section-area .cta-circle-area .img1 {
+        height: 380px;
     }
 }
 
