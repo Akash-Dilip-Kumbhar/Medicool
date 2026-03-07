@@ -25790,3 +25790,39 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 /*============= DOCTOR PROFILE PAGE CSS ENDS ===============*/
 /*# sourceMappingURL=main.css.map */
+
+/* --- CUSTOM MOBILE NAVBAR FIXES --- */
+.vl-offcanvas-menu nav ul li .sub-menu {
+    display: none;
+    background: #02015a !important;
+    /* Force dark background for sub-menus */
+    padding: 10px 20px !important;
+    margin: 10px 0 !important;
+    border-radius: 8px;
+    list-style: none;
+}
+
+.vl-offcanvas-menu nav ul li .sub-menu li a {
+    color: #ffffff !important;
+    /* Force white text for sub-menu items */
+    font-size: 16px !important;
+    padding: 8px 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.vl-offcanvas-menu nav ul li.active>.sub-menu {
+    display: block !important;
+}
+
+/* Ensure indicators are visible */
+.vl-offcanvas-menu nav ul li a i {
+    float: right;
+    margin-top: 5px;
+    transition: transform 0.3s;
+}
+
+.vl-offcanvas-menu nav ul li.active>a i {
+    transform: rotate(180deg);
+}
+
+/* --- END CUSTOM MOBILE NAVBAR FIXES --- */
