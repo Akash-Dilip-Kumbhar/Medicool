@@ -3213,7 +3213,7 @@ body {
     }
 
     .director-img-wrapper img {
-        aspect-ratio: 4/3;
+        aspect-ratio: auto;
     }
 
     .director-content {
