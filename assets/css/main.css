@@ -782,6 +782,17 @@ body {
     font-size: 40px!important;
 }
 
+@media (min-width: 1280px){
+      .heading4 h2 {
+       
+     font-size: 36px;
+    }
+    .heading4 p{
+        font-size:18px !important;
+        line-height: auto !important;
+    }
+}
+
 @media (max-width: 767px) {
     .heading4 h2 {
         font-size: var(--ztc-font-size-font-s32);
@@ -4135,6 +4146,13 @@ body {
     padding: 20px 20px;
     transition: all 0.4s;
     margin-top: 20px;
+}
+
+.service-all-details-area .service-main-siderbar-area .categories-area ul li a.active {
+    background: var(--ztc-bg-bg-11);
+    transition: all 0.4s;
+    transform: translateY(-5px);
+    color: var(--ztc-text-text-1);
 }
 
 .service-all-details-area .service-main-siderbar-area .categories-area ul li a:hover {
