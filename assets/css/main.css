@@ -3247,35 +3247,35 @@ body {
     position: absolute;
 }
 
-.service4-section-area .service4-slider-area {
+.service4-section-area .departmental-slider {
     position: relative;
     z-index: 1;
 }
 
-.service4-section-area .service4-slider-area.owl-carousel .owl-stage-outer {
+.service4-section-area .departmental-slider.owl-carousel .owl-stage-outer {
     overflow: inherit !important;
 }
 
-.service4-section-area .service4-slider-area .owl-dots {
+.service4-section-area .departmental-slider .owl-dots {
     margin-top: 50px;
     position: relative;
 }
 
 @media (max-width: 767px) {
-    .service4-section-area .service4-slider-area .owl-dots {
+    .service4-section-area .departmental-slider .owl-dots {
         margin-top: 30px;
         text-align: center;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .service4-section-area .service4-slider-area .owl-dots {
+    .service4-section-area .departmental-slider .owl-dots {
         margin-top: 30px;
         text-align: center;
     }
 }
 
-.service4-section-area .service4-slider-area .owl-dots::after {
+.service4-section-area .departmental-slider .owl-dots::after {
     position: absolute;
     content: "";
     height: 10px;
@@ -3288,18 +3288,18 @@ body {
 }
 
 @media (max-width: 767px) {
-    .service4-section-area .service4-slider-area .owl-dots::after {
+    .service4-section-area .departmental-slider .owl-dots::after {
         display: none;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .service4-section-area .service4-slider-area .owl-dots::after {
+    .service4-section-area .departmental-slider .owl-dots::after {
         display: none;
     }
 }
 
-.service4-section-area .service4-slider-area .owl-dots button {
+.service4-section-area .departmental-slider .owl-dots button {
     height: 12px;
     width: 432px;
     border-radius: 10px;
@@ -3310,7 +3310,7 @@ body {
 }
 
 @media (max-width: 767px) {
-    .service4-section-area .service4-slider-area .owl-dots button {
+    .service4-section-area .departmental-slider .owl-dots button {
         height: 16px;
         width: 16px;
         border-radius: 50%;
@@ -3319,7 +3319,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .service4-section-area .service4-slider-area .owl-dots button {
+    .service4-section-area .departmental-slider .owl-dots button {
         height: 16px;
         width: 16px;
         border-radius: 50%;
@@ -3327,31 +3327,31 @@ body {
     }
 }
 
-.service4-section-area .service4-slider-area .owl-dots button.active {
+.service4-section-area .departmental-slider .owl-dots button.active {
     background: #C5B7FF;
     transition: all 0.4s;
 }
 
-.service4-section-area .service4-slider-area .service4-boxarea {
+.service4-section-area .departmental-slider .service4-boxarea {
     position: relative;
     z-index: 1;
     background: var(--ztc-bg-bg-1);
     border-radius: 8px;
 }
 
-.service4-section-area .service4-slider-area .service4-boxarea:hover .img1 img {
+.service4-section-area .departmental-slider .service4-boxarea:hover .img1 img {
     transform: scale(1.1) rotate(-4deg);
     transition: all 0.4s;
 }
 
-.service4-section-area .service4-slider-area .service4-boxarea .content-area {
+.service4-section-area .departmental-slider .service4-boxarea .content-area {
     padding: 24px 16px;
 }
 
-.service4-section-area .service4-slider-area .service4-boxarea .content-area .title {
+.service4-section-area .departmental-slider .service4-boxarea .content-area .title {
     color: var(--ztc-text-text-11);
     font-family: var(--ztc-family-font1);
-    font-size: var(--ztc-font-size-font-s24);
+    font-size: var(--ztc-font-size-font-s18);
     font-style: normal;
     font-weight: var(--ztc-weight-semibold);
     line-height: 24px;
@@ -3359,12 +3359,12 @@ body {
     transition: all 0.4s;
 }
 
-.service4-section-area .service4-slider-area .service4-boxarea .content-area .title:hover {
+.service4-section-area .departmental-slider .service4-boxarea .content-area .title:hover {
     color: var(--ztc-text-text-12);
     transition: all 0.4s;
 }
 
-.service4-section-area .service4-slider-area .service4-boxarea .content-area p {
+.service4-section-area .departmental-slider .service4-boxarea .content-area p {
     color: var(--ztc-text-text-11);
     font-family: var(--ztc-family-font1);
     font-size: var(--ztc-font-size-font-s16);
@@ -3374,7 +3374,7 @@ body {
     letter-spacing: -0.16px;
 }
 
-.service4-section-area .service4-slider-area .service4-boxarea .content-area .readmore {
+.service4-section-area .departmental-slider .service4-boxarea .content-area .readmore {
     color: var(--ztc-text-text-12);
     font-family: var(--ztc-family-font1);
     font-size: var(--ztc-font-size-font-s16);
@@ -3386,18 +3386,18 @@ body {
     transition: all 0.4s;
 }
 
-.service4-section-area .service4-slider-area .service4-boxarea .content-area .readmore svg {
+.service4-section-area .departmental-slider .service4-boxarea .content-area .readmore svg {
     margin-left: 4px;
 }
 
-.service4-section-area .service4-slider-area .service4-boxarea .img1 {
+.service4-section-area .departmental-slider .service4-boxarea .img1 {
     position: relative;
     overflow: hidden;
     border-radius: 0 0 8px 8px;
     transition: all 0.4s;
 }
 
-.service4-section-area .service4-slider-area .service4-boxarea .img1 img {
+.service4-section-area .departmental-slider .service4-boxarea .img1 img {
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
