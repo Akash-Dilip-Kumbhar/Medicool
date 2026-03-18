@@ -46,6 +46,85 @@
             display: inline-block;
             transition: all 0.4s;
         }
+
+        .department-section .upper-line {
+            width: 50px;
+            height: 5px;
+            background: var(--ztc-text-text-12);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .department-section .department-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--ztc-text-text-11);
+            margin-bottom: 24px;
+        }
+
+        .department-section .department-description {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #494A4A;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .department-section .department-divider {
+            border-top: 1px dashed #a76862;
+            margin-bottom: 20px;
+        }
+
+        .department-section .department-specialist {
+            font-size: 20px;
+            font-weight: 700;
+            color: #02015A;
+            margin-bottom: 24px;
+            background: none;
+            box-shadow: none;
+            padding: 0;
+        }
+
+        .department-section .department-specialist-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .department-section .department-specialist-list li {
+            margin-bottom: 15px;
+            font-size: 17px;
+            font-weight: 500;
+            color: #31353D;
+            display: flex;
+            align-items: start;
+        }
+
+        .department-section .department-specialist-list li .department-specialist-list-item-icon {
+            background: rgba(68, 22, 255, 0.1);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+
+        .department-section .department-specialist-list li .department-specialist-list-item-icon i {
+            color: var(--ztc-text-text-12);
+            font-size: 14px;
+        }
+
+        .department-section .department-specialist-list li .department-specialist-list-item-text {
+            line-height: 1.6;
+            margin-top: 2px;
+        }
+
+        .department-section .department-specialist-list li .department-specialist-list-item-text span {
+            font-weight: 700;
+        }
     </style>
 
 </head>
@@ -390,108 +469,8 @@
     </div>
     <!--===== MISSION VISION AREA ENDS =======-->
 
-    <style>
-        .team4-boxarea {
-            background: #fff;
-            padding: 20px;
-            border-radius: 16px;
-            text-align: center;
-            transition: 0.3s;
-        }
-
-        .team4-boxarea:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .team4-boxarea img {
-            border-radius: 12px;
-        }
-    </style>
-
-    <div class="team4-slider-area">
-        <div class="splide" id="doctor-slider">
-            <div class="splide__track">
-                <ul class="splide__list">
-
-                    <!-- Doctor 1 -->
-                    <li class="splide__slide">
-                        <div class="team4-boxarea">
-                            <div class="img1">
-                                <img loading="lazy" src="assets/img/all-images/team/team-img10.png" alt="Doctor">
-                            </div>
-                            <div class="name-area">
-                                <a href="doctor.html">Dr. Jane Cooper</a>
-                                <div class="space12"></div>
-                                <p>Dentist</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- Doctor 2 -->
-                    <li class="splide__slide">
-                        <div class="team4-boxarea">
-                            <div class="img1">
-                                <img loading="lazy" src="assets/img/all-images/team/team-img11.png" alt="Doctor">
-                            </div>
-                            <div class="name-area">
-                                <a href="doctor.html">Dr. Ralph Edwards</a>
-                                <div class="space12"></div>
-                                <p>Cardiologist</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- Doctor 3 -->
-                    <li class="splide__slide">
-                        <div class="team4-boxarea">
-                            <div class="img1">
-                                <img loading="lazy" src="assets/img/all-images/team/team-img12.png" alt="Doctor">
-                            </div>
-                            <div class="name-area">
-                                <a href="doctor.html">Dr. Barkha Kukreja</a>
-                                <div class="space12"></div>
-                                <p>Gynecologist</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- Doctor 4 -->
-                    <li class="splide__slide">
-                        <div class="team4-boxarea">
-                            <div class="img1">
-                                <img loading="lazy" src="assets/img/all-images/team/team-img13.png" alt="Doctor">
-                            </div>
-                            <div class="name-area">
-                                <a href="doctor.html">Dr. Kristin Watson</a>
-                                <div class="space12"></div>
-                                <p>Dermatologist</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- Doctor 5 -->
-                    <li class="splide__slide">
-                        <div class="team4-boxarea">
-                            <div class="img1">
-                                <img loading="lazy" src="assets/img/all-images/team/team-img14.png" alt="Doctor">
-                            </div>
-                            <div class="name-area">
-                                <a href="doctor.html">Dr. Wade Warren</a>
-                                <div class="space12"></div>
-                                <p>Surgeon</p>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
     <!--===== SPECIALTIES AREA STARTS =======-->
-    <div class="service-all-details-area sp1 pt-5" style="background:#f8f9fa;">
+    <div class="service-all-details-area  pt-5 pb-5" style="background:#f8f9fa;">
         <div class="container">
             <div class="heading4 text-center m-auto" style="max-width: 800px;">
                 <h5 class="vl-section-subtitle aos-init aos-animate" data-aos="fade-up" data-aos-duration="800"
@@ -502,7 +481,7 @@
                                 stroke="#02015A" stroke-width="1.5"></path>
                         </svg></span></h5>
                 <div class="space24"></div>
-                <h2 class="vl-section-title" data-aos="fade-up" data-aos-duration="1000">Our Medical Specialties<br>&
+                <h2 class="vl-section-title" data-aos="fade-up" data-aos-duration="1000">Our Medical Specialties &
                     Expert Doctors</h2>
                 <div class="space24"></div>
                 <p data-aos="fade-up" data-aos-duration="1100" style="font-size: 17px; color: #494A4A;">Medicool
@@ -513,22 +492,17 @@
 
             <div class="row align-items-center mb-5 pb-5 border-bottom" data-aos="fade-up" data-aos-duration="800">
                 <div class="col-lg-6 order-1 order-lg-1 mb-4 mb-lg-0">
-                    <div class="splide spec-slider-0 overflow-hidden shadow-lg p-3 bg-white"
+                    <div class="splide spec-slider-0 overflow-hidden shadow-lg p-1 bg-white"
                         style="border-radius: 30px;">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide"><img
-                                        src="https://productimages.withfloats.com/serviceimages/tile/6458cd8c4a1bc26149111d63lapro"
+                                <li class="splide__slide">
+                                    <img src="assets/img/all-images/service/indian_general_surgery.png"
                                         alt="General Surgery"
                                         style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
                                 </li>
-                                <li class="splide__slide"><img
-                                        src="https://www.aksharhospitals.com/storage/590/649d436a547a2_GS.webp"
-                                        alt="General Surgery"
-                                        style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
-                                </li>
-                                <li class="splide__slide"><img
-                                        src="https://my.clevelandclinic.org/-/scassets/Images/org/health/articles/4819-laparoscopy.jpg"
+                                <li class="splide__slide">
+                                    <img src="https://productimages.withfloats.com/serviceimages/tile/6458cd8c4a1bc26149111d63lapro"
                                         alt="General Surgery"
                                         style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
                                 </li>
@@ -537,58 +511,40 @@
                     </div>
                 </div>
                 <div class="col-lg-6 order-2 order-lg-2 padding-left">
-                    <div class="heading4">
-                        <div
-                            style="width:50px; height:5px; background:var(--ztc-text-text-12); border-radius:10px; margin-bottom: 20px;">
-                        </div>
-                        <h3
-                            style="font-size: 36px; font-weight: 700; color: var(--ztc-text-text-11); margin-bottom: 24px;">
-                            General Surgery</h3>
-                        <p style="font-size: 17px; line-height: 1.8; color: #494A4A; margin-bottom: 30px;">The General
+                    <div class="heading4 department-section">
+                        <div class="upper-line"></div>
+                        <h3 class="department-title">General Surgery</h3>
+                        <p class="department-description">The General
                             Surgery department at Medicool Hospital provides advanced surgical care for abdominal
                             diseases, hernia, gallbladder conditions, and other surgical problems using modern
                             techniques including laparoscopic (minimally invasive) surgery.</p>
-                        <hr style="border-top:1px dashed #DECCCA; margin-bottom: 30px;">
-                        <h5
-                            style="font-size: 20px; font-weight: 700; color: #02015A; margin-bottom: 24px; background: none; box-shadow: none; padding: 0;">
-                            Our Specialists:</h5>
-                        <ul style="list-style: none; padding-left: 0;">
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
+                        <hr class="department-divider">
+                        <h5 class="department-specialist">Our Specialists:</h5>
+                        <ul class="department-specialist-list">
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
                                 </div> <span style="line-height:1.6; margin-top:2px;">Dr. Barkha Kukreja — MBBS, MS
                                     General &
                                     Laparoscopic Surgery</span>
                             </li>
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Kanchan Waykole — MBBS, MS
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div> <span class="department-specialist-list-item-text">Dr. Kanchan Waykole — MBBS, MS
                                     General &
                                     Laparoscopic Surgery</span>
                             </li>
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
                                 </div> <span style="line-height:1.6; margin-top:2px;">Dr. Pawan Dharurkar — MBBS, MS
                                     General &
                                     Laparoscopic Surgery</span>
                             </li>
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
                                 </div> <span style="line-height:1.6; margin-top:2px;">Dr. Kamlakar Haran — MBBS, DNB
                                     General
                                     Surgery</span>
@@ -600,20 +556,23 @@
 
             <div class="row align-items-center mb-5 pb-5 border-bottom" data-aos="fade-up" data-aos-duration="800">
                 <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
-                    <div class="splide spec-slider-1 overflow-hidden shadow-lg p-3 bg-white"
+                    <div class="splide spec-slider-1 overflow-hidden shadow-lg p-1 bg-white"
                         style="border-radius: 30px;">
                         <div class="splide__track">
                             <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="assets/img/all-images/service/indian_general_medicine.png"
+                                        alt="Dr. Prasad Bagare"
+                                        style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
+                                </li>
+
+
                                 <li class="splide__slide"><img
                                         src="https://kdahweb-static-1.kokilabenhospital.com/kdah-2019/shop/package/images/16225529690.jpg"
                                         alt="General Medicine"
                                         style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
                                 </li>
-                                <li class="splide__slide"><img
-                                        src="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJvYXV0aCI6eyJjbGllbnRfaWQiOiJjbGllbnQtY2hkcnR4NWphaHV0Y2hsdiJ9LCJwYXRoIjoiaWhoLWhlYWx0aGNhcmUtYmVyaGFkXC9maWxlXC80Z3Z3c0NNdzFIelQxdGhkN3NVQy5qcGcifQ%3Aihh-healthcare-berhad%3ABFKvVl-7mGHszwGlxIQtWZJKSzQosnP4e2BrkW4tAs4?crop=fp&fp=0.5%2C0.5&fp_zoom=1&height=480&width=854"
-                                        alt="General Medicine"
-                                        style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
-                                </li>
+
                                 <li class="splide__slide"><img
                                         src="https://www.njabulomedical.co.za/images/services/full-medical-examination.jpg"
                                         alt="General Medicine"
@@ -624,42 +583,30 @@
                     </div>
                 </div>
                 <div class="col-lg-6 order-2 order-lg-1 padding-right">
-                    <div class="heading4">
-                        <div
-                            style="width:50px; height:5px; background:var(--ztc-text-text-12); border-radius:10px; margin-bottom: 20px;">
-                        </div>
-                        <h3
-                            style="font-size: 36px; font-weight: 700; color: var(--ztc-text-text-11); margin-bottom: 24px;">
-                            General Medicine</h3>
-                        <p style="font-size: 17px; line-height: 1.8; color: #494A4A; margin-bottom: 30px;">The General
+                    <div class="heading4 department-section">
+                        <div class="upper-line"></div>
+                        <h3 class="department-title">General Medicine</h3>
+                        <p class="department-description">The General
                             Medicine department focuses on diagnosing and treating common illnesses, chronic diseases,
                             infections, and lifestyle disorders. Our physicians provide preventive care, accurate
                             diagnosis, and long-term disease management.</p>
-                        <hr style="border-top:1px dashed #DECCCA; margin-bottom: 30px;">
-                        <h5
-                            style="font-size: 20px; font-weight: 700; color: #02015A; margin-bottom: 24px; background: none; box-shadow: none; padding: 0;">
-                            Our Specialists:</h5>
-                        <ul style="list-style: none; padding-left: 0;">
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Prasad Bagare — MBBS, MD
-                                    General
-                                    Medicine</span>
+                        <hr class="department-divider">
+                        <h5 class="department-specialist">Our Specialists:</h5>
+                        <ul class="department-specialist-list">
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div> <span class="department-specialist-list-item-text">Dr. Prasad Bagare — MBBS, MD
+                                    General Medicine</span>
                             </li>
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Ganesh Rajguru — MBBS, DTCD,
-                                    IOCCM
-                                    (Respiratory Medicine)</span>
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div> <span class="department-specialist-list-item-text">Dr. Ganesh Rajguru — MBBS,
+                                    DTCD,
+                                    IOCCM (Respiratory Medicine)</span>
                             </li>
+
                         </ul>
                     </div>
                 </div>
@@ -667,71 +614,59 @@
 
             <div class="row align-items-center mb-5 pb-5 border-bottom" data-aos="fade-up" data-aos-duration="800">
                 <div class="col-lg-6 order-1 order-lg-1 mb-4 mb-lg-0">
-                    <div class="splide spec-slider-2 overflow-hidden shadow-lg p-3 bg-white"
+                    <div class="splide spec-slider-2 overflow-hidden shadow-lg p-1 bg-white"
                         style="border-radius: 30px;">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide"><img
-                                        src="https://www.manipalhospitals.com/sarjapurroad/uploads/specialities/content_photo/gynecologist-in-bangalore.jpg"
+                                <li class="splide__slide">
+                                    <img src="assets/img/all-images/service/indian_gynaecology.png"
                                         alt="Obstetrics & Gynecology"
                                         style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
                                 </li>
-                                <li class="splide__slide"><img
-                                        src="https://venuswomenshospital.com/uploads/image/blog/untitled-design-2024-04-02t140904-775.png"
+                                <li class="splide__slide">
+                                    <img src="https://www.manipalhospitals.com/sarjapurroad/uploads/specialities/content_photo/gynecologist-in-bangalore.jpg"
                                         alt="Obstetrics & Gynecology"
                                         style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
                                 </li>
-                                <li class="splide__slide"><img
-                                        src="https://www.hopkinsmedicine.org/-/media/gynecology-obstetrics/images/birthing-services-images/nurses-and-woman-in-labor-640x440.jpg"
+                                <li class="splide__slide">
+                                    <img src="https://venuswomenshospital.com/uploads/image/blog/untitled-design-2024-04-02t140904-775.png"
                                         alt="Obstetrics & Gynecology"
                                         style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
                                 </li>
+
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 order-2 order-lg-2 padding-left">
-                    <div class="heading4">
-                        <div
-                            style="width:50px; height:5px; background:var(--ztc-text-text-12); border-radius:10px; margin-bottom: 20px;">
-                        </div>
-                        <h3
-                            style="font-size: 36px; font-weight: 700; color: var(--ztc-text-text-11); margin-bottom: 24px;">
-                            Obstetrics & Gynecology</h3>
-                        <p style="font-size: 17px; line-height: 1.8; color: #494A4A; margin-bottom: 30px;">The
+                    <div class="department-section heading4">
+                        <div class="upper-line"></div>
+                        <h3 class="department-title">Obstetrics & Gynecology</h3>
+                        <p class="department-description">The
                             Obstetrics & Gynecology department provides comprehensive women’s healthcare including
                             pregnancy care, infertility treatment, reproductive health services, and gynecological
                             surgeries.</p>
-                        <hr style="border-top:1px dashed #DECCCA; margin-bottom: 30px;">
-                        <h5
-                            style="font-size: 20px; font-weight: 700; color: #02015A; margin-bottom: 24px; background: none; box-shadow: none; padding: 0;">
-                            Our Specialists:</h5>
-                        <ul style="list-style: none; padding-left: 0;">
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Amey Chugh — MBBS, MS OB-GYN,
+                        <hr class="department-divider">
+                        <h5 class="department-specialist">Our Specialists:</h5>
+                        <ul class="department-specialist-list">
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div> <span class="department-specialist-list-item-text">Dr. Amey Chugh — MBBS, MS
+                                    OB-GYN,
                                     IVF
                                     Specialist</span>
                             </li>
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Pritam — MBBS, DGO, DNB</span>
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div> <span class="department-specialist-list-item-text">Dr. Pritam — MBBS, DGO,
+                                    DNB</span>
                             </li>
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Pragati Mhaske — MBBS,
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div> <span class="department-specialist-list-item-text">Dr. Pragati Mhaske — MBBS,
                                     DGO</span>
                             </li>
                         </ul>
@@ -741,22 +676,18 @@
 
             <div class="row align-items-center mb-5 pb-5 border-bottom" data-aos="fade-up" data-aos-duration="800">
                 <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
-                    <div class="splide spec-slider-3 overflow-hidden shadow-lg p-3 bg-white"
+                    <div class="splide spec-slider-3 overflow-hidden shadow-lg p-1 bg-white"
                         style="border-radius: 30px;">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide"><img
-                                        src="https://images.peopleimages.com/picture/202208/2498927-doctor-child-and-mouth-of-a-black-man-helping-little-girl-in-checkup-or-consultation-at-a-hospital.-medical-male-expert-or-pediatrician-examining-kid-for-throat-infection-illness-or-sore-in-clinic-fit_400_400.jpg"
-                                        alt="Pediatrics"
+
+                                <li class="splide__slide">
+                                    <img src="assets/img/all-images/service/indian_paediatrics.png" alt="Pediatrics"
                                         style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
                                 </li>
+
                                 <li class="splide__slide"><img
                                         src="https://www.dhatrihealthcare.com/assets/sitemap-images/child-vaccination-in-whitefield.webp"
-                                        alt="Pediatrics"
-                                        style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
-                                </li>
-                                <li class="splide__slide"><img
-                                        src="https://www.thechildrenshospitalmumbai.com/images/breadcrumb.png"
                                         alt="Pediatrics"
                                         style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
                                 </li>
@@ -765,38 +696,27 @@
                     </div>
                 </div>
                 <div class="col-lg-6 order-2 order-lg-1 padding-right">
-                    <div class="heading4">
-                        <div
-                            style="width:50px; height:5px; background:var(--ztc-text-text-12); border-radius:10px; margin-bottom: 20px;">
-                        </div>
-                        <h3
-                            style="font-size: 36px; font-weight: 700; color: var(--ztc-text-text-11); margin-bottom: 24px;">
-                            Pediatrics</h3>
-                        <p style="font-size: 17px; line-height: 1.8; color: #494A4A; margin-bottom: 30px;">The
+                    <div class="department-section heading4">
+                        <div class="upper-line"></div>
+                        <h3 class="department-title">Pediatrics</h3>
+                        <p class="department-description">The
                             Pediatrics department focuses on the health and development of infants, children, and
                             adolescents, offering vaccinations, growth monitoring, and treatment for childhood
                             illnesses.</p>
-                        <hr style="border-top:1px dashed #DECCCA; margin-bottom: 30px;">
-                        <h5
-                            style="font-size: 20px; font-weight: 700; color: #02015A; margin-bottom: 24px; background: none; box-shadow: none; padding: 0;">
-                            Our Specialists:</h5>
-                        <ul style="list-style: none; padding-left: 0;">
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Swati Vispute — MBBS, DCH,
+                        <hr class="department-divider">
+                        <h5 class="department-specialist">Our Specialists:</h5>
+                        <ul class="department-specialist-list">
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div> <span class="department-specialist-list-item-text">Dr. Swati Vispute — MBBS, DCH,
                                     Neonatologist</span>
                             </li>
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Adity Thorat — MBBS, MD</span>
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div> <span class="department-specialist-list-item-text">Dr. Adity Thorat — MBBS,
+                                    MD</span>
                             </li>
                         </ul>
                     </div>
@@ -805,22 +725,17 @@
 
             <div class="row align-items-center mb-5 pb-5 border-bottom" data-aos="fade-up" data-aos-duration="800">
                 <div class="col-lg-6 order-1 order-lg-1 mb-4 mb-lg-0">
-                    <div class="splide spec-slider-4 overflow-hidden shadow-lg p-3 bg-white"
+                    <div class="splide spec-slider-4 overflow-hidden shadow-lg p-1 bg-white"
                         style="border-radius: 30px;">
                         <div class="splide__track">
                             <ul class="splide__list">
+
+                                <li class="splide__slide">
+                                    <img src="assets/img/all-images/service/indian_orthopaedics.png" alt="Orthopedics"
+                                        style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
+                                </li>
                                 <li class="splide__slide"><img
                                         src="https://my.clevelandclinic.org/-/scassets/images/org/care-pages/orthopaedic/knee-pain-feature.jpg"
-                                        alt="Orthopedics"
-                                        style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
-                                </li>
-                                <li class="splide__slide"><img
-                                        src="https://shreyadityahospital.com/uploads/article/article_image_1744026975.png"
-                                        alt="Orthopedics"
-                                        style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
-                                </li>
-                                <li class="splide__slide"><img
-                                        src="https://bizimages.withfloats.com/actual/655f02c4616521d071a5a973.jpg"
                                         alt="Orthopedics"
                                         style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
                                 </li>
@@ -829,28 +744,20 @@
                     </div>
                 </div>
                 <div class="col-lg-6 order-2 order-lg-2 padding-left">
-                    <div class="heading4">
-                        <div
-                            style="width:50px; height:5px; background:var(--ztc-text-text-12); border-radius:10px; margin-bottom: 20px;">
-                        </div>
-                        <h3
-                            style="font-size: 36px; font-weight: 700; color: var(--ztc-text-text-11); margin-bottom: 24px;">
-                            Orthopedics</h3>
-                        <p style="font-size: 17px; line-height: 1.8; color: #494A4A; margin-bottom: 30px;">The
+                    <div class="department-section heading4">
+                        <div class="upper-line"></div>
+                        <h3 class="department-title">Orthopedics</h3>
+                        <p class="department-description">The
                             Orthopedics department specializes in the treatment of bone, joint, and spine disorders
                             including fractures, arthritis, sports injuries, and joint replacement procedures.</p>
-                        <hr style="border-top:1px dashed #DECCCA; margin-bottom: 30px;">
-                        <h5
-                            style="font-size: 20px; font-weight: 700; color: #02015A; margin-bottom: 24px; background: none; box-shadow: none; padding: 0;">
-                            Our Specialist:</h5>
-                        <ul style="list-style: none; padding-left: 0;">
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Javed Shaikh — MBBS, DNB, MCH
+                        <hr class="department-divider">
+                        <h5 class="department-specialist">Our Specialists:</h5>
+                        <ul class="department-specialist-list">
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div> <span class="department-specialist-list-item-text">Dr. Javed Shaikh — MBBS, DNB,
+                                    MCH
                                     Arthroscopy</span>
                             </li>
                         </ul>
@@ -860,10 +767,16 @@
 
             <div class="row align-items-center mb-5 pb-5 border-bottom" data-aos="fade-up" data-aos-duration="800">
                 <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
-                    <div class="splide spec-slider-5 overflow-hidden shadow-lg p-3 bg-white"
+                    <div class="splide spec-slider-5 overflow-hidden shadow-lg p-1 bg-white"
                         style="border-radius: 30px;">
                         <div class="splide__track">
                             <ul class="splide__list">
+
+                                <li class="splide__slide">
+                                    <img src="assets/img/all-images/service/indian_ent.png" alt="ENT (Ear Nose Throat)"
+                                        style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
+                                </li>
+
                                 <li class="splide__slide"><img
                                         src="https://www.hiranandanihospital.org/public/uploads/blogs/1762864775.jpg"
                                         alt="ENT (Ear Nose Throat)"
@@ -874,56 +787,36 @@
                                         alt="ENT (Ear Nose Throat)"
                                         style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
                                 </li>
-                                <li class="splide__slide"><img
-                                        src="https://st4.depositphotos.com/1006542/40240/i/1600/depositphotos_402402396-stock-photo-female-ent-doctor-patient-office.jpg"
-                                        alt="ENT (Ear Nose Throat)"
-                                        style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
-                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 order-2 order-lg-1 padding-right">
-                    <div class="heading4">
-                        <div
-                            style="width:50px; height:5px; background:var(--ztc-text-text-12); border-radius:10px; margin-bottom: 20px;">
-                        </div>
-                        <h3
-                            style="font-size: 36px; font-weight: 700; color: var(--ztc-text-text-11); margin-bottom: 24px;">
-                            ENT (Ear Nose Throat)</h3>
-                        <p style="font-size: 17px; line-height: 1.8; color: #494A4A; margin-bottom: 30px;">The ENT
-                            department treats disorders related to the ear, nose, throat, and sinuses, including hearing
-                            loss, sinus infections, throat problems, and voice disorders.</p>
-                        <hr style="border-top:1px dashed #DECCCA; margin-bottom: 30px;">
-                        <h5
-                            style="font-size: 20px; font-weight: 700; color: #02015A; margin-bottom: 24px; background: none; box-shadow: none; padding: 0;">
-                            Our Specialists:</h5>
-                        <ul style="list-style: none; padding-left: 0;">
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Paresh Chavan — MBBS, MS
+                    <div class="heading4 department-section">
+                        <div class="upper-line"></div>
+                        <h3 class="department-title">ENT (Ear Nose Throat)</h3>
+                        <p class="department-description">The ENT department treats disorders related to the ear, nose,
+                            throat, and sinuses, including hearing loss, sinus infections, throat problems, and voice
+                            disorders.</p>
+                        <hr class="department-divider">
+                        <h5 class="department-specialist">Our Specialists:</h5>
+                        <ul class="department-specialist-list">
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div> <span class="department-specialist-list-item-text">Dr. Paresh Chavan — MBBS, MS
                                     ENT</span>
                             </li>
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Chirag Shah — MBBS, MS
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div> <span class="department-specialist-list-item-text">Dr. Chirag Shah — MBBS, MS
                                     ENT</span>
                             </li>
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Sunil Pawar — MBBS, MS
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div> <span class="department-specialist-list-item-text">Dr. Sunil Pawar — MBBS, MS
                                     ENT</span>
                             </li>
                         </ul>
@@ -933,62 +826,41 @@
 
             <div class="row align-items-center mb-5 pb-5 border-bottom" data-aos="fade-up" data-aos-duration="800">
                 <div class="col-lg-6 order-1 order-lg-1 mb-4 mb-lg-0">
-                    <div class="splide spec-slider-6 overflow-hidden shadow-lg p-3 bg-white"
+                    <div class="splide spec-slider-6 overflow-hidden shadow-lg p-1 bg-white"
                         style="border-radius: 30px;">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide"><img
-                                        src="https://www.drniveditadadu.com/nivedita-admin/uploads/Cosmetic-Dermatology-Treatments-Offered.jpg"
-                                        alt="Cosmetology"
+                                <li>
+                                    <img src="assets/img/all-images/service/indian_cosmetology.png" alt="Cosmetology"
                                         style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
                                 </li>
-                                <li class="splide__slide"><img
-                                        src="https://content.jdmagicbox.com/v2/comp/hubli/y5/0836px836.x836.190921182255.e2y5/catalogue/dr-netras-laser-skin-clinic-airport-road-hubli-hubli-beauty-clinics-7c84jmaq3g.jpg"
-                                        alt="Cosmetology"
-                                        style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
-                                </li>
-                                <li class="splide__slide"><img
-                                        src="https://citc.co.in/asset_data/photo/blog_photo_1746188974_44708926882_1746188974.jpg"
-                                        alt="Cosmetology"
-                                        style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
-                                </li>
+
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 order-2 order-lg-2 padding-left">
-                    <div class="heading4">
-                        <div
-                            style="width:50px; height:5px; background:var(--ztc-text-text-12); border-radius:10px; margin-bottom: 20px;">
-                        </div>
-                        <h3
-                            style="font-size: 36px; font-weight: 700; color: var(--ztc-text-text-11); margin-bottom: 24px;">
+                    <div class="department-section heading4">
+                        <div class="upper-line"></div>
+                        <h3 class="department-title">
                             Cosmetology</h3>
-                        <p style="font-size: 17px; line-height: 1.8; color: #494A4A; margin-bottom: 30px;">The
+                        <p class="department-description">The
                             Cosmetology department offers advanced aesthetic treatments including skin rejuvenation,
                             acne treatment, hair restoration, and cosmetic dermatology procedures.</p>
-                        <hr style="border-top:1px dashed #DECCCA; margin-bottom: 30px;">
-                        <h5
-                            style="font-size: 20px; font-weight: 700; color: #02015A; margin-bottom: 24px; background: none; box-shadow: none; padding: 0;">
-                            Our Specialists:</h5>
-                        <ul style="list-style: none; padding-left: 0;">
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Barkha Kukreja — MBBS, MS,
+                        <hr class="department-divider">
+                        <h5 class="department-specialist">Our Specialists:</h5>
+                        <ul class="department-specialist-list">
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div> <span class="department-specialist-list-item-text">Dr. Barkha Kukreja — MBBS, MS,
                                     PDCC
                                     Cosmetology, Trichology & Obesity Management</span>
                             </li>
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Varsha Kukreja — MBBS, MS,
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div> <span class="department-specialist-list-item-text">Dr. Varsha Kukreja — MBBS, MS,
                                     PDCC
                                     Cosmetology, Trichology & Obesity Management</span>
                             </li>
@@ -999,22 +871,18 @@
 
             <div class="row align-items-center mb-5 pb-5 border-bottom" data-aos="fade-up" data-aos-duration="800">
                 <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
-                    <div class="splide spec-slider-7 overflow-hidden shadow-lg p-3 bg-white"
+                    <div class="splide spec-slider-7 overflow-hidden shadow-lg p-1 bg-white"
                         style="border-radius: 30px;">
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide"><img
+                                        src="assets/img/all-images/service/indian_plastic_surgery.png"
+                                        alt="Plastic Surgery"
+                                        style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
+                                </li>
+
+                                <li class="splide__slide"><img
                                         src="https://bmchrc.org/speciality/66752a467a9fePlastic-%26-Reconstructive-Surgery.webp"
-                                        alt="Plastic Surgery"
-                                        style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
-                                </li>
-                                <li class="splide__slide"><img
-                                        src="https://jamesleeplasticsurgery.com/assets/img/blog/wizseller59-3.png"
-                                        alt="Plastic Surgery"
-                                        style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
-                                </li>
-                                <li class="splide__slide"><img
-                                        src="https://i0wp.com/images-prod.healthline.com/hlcmsresource/images/News/general-health/031717_plastictrend_THUMB_LARGE.jpg?h=1528&w=1155"
                                         alt="Plastic Surgery"
                                         style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
                                 </li>
@@ -1023,38 +891,29 @@
                     </div>
                 </div>
                 <div class="col-lg-6 order-2 order-lg-1 padding-right">
-                    <div class="heading4">
-                        <div
-                            style="width:50px; height:5px; background:var(--ztc-text-text-12); border-radius:10px; margin-bottom: 20px;">
-                        </div>
-                        <h3
-                            style="font-size: 36px; font-weight: 700; color: var(--ztc-text-text-11); margin-bottom: 24px;">
+                    <div class="department-section heading4">
+                        <div class="upper-line"></div>
+                        <h3 class="department-title">
                             Plastic Surgery</h3>
-                        <p style="font-size: 17px; line-height: 1.8; color: #494A4A; margin-bottom: 30px;">The Plastic
+                        <p class="department-description">The Plastic
                             Surgery department performs reconstructive and cosmetic surgeries to restore function and
                             improve appearance after injury, congenital defects, or aesthetic concerns.</p>
-                        <hr style="border-top:1px dashed #DECCCA; margin-bottom: 30px;">
-                        <h5
-                            style="font-size: 20px; font-weight: 700; color: #02015A; margin-bottom: 24px; background: none; box-shadow: none; padding: 0;">
-                            Our Specialists:</h5>
-                        <ul style="list-style: none; padding-left: 0;">
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Dipak Patil — MBBS, MS, MCH
+                        <hr class="department-divider">
+                        <h5 class="department-specialist">Our Specialists:</h5>
+                        <ul class="department-specialist-list">
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div> <span class="department-specialist-list-item-text">Dr. Dipak Patil — MBBS, MS,
+                                    MCH
                                     Plastic
                                     Surgery & Reconstructive Surgery</span>
                             </li>
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Suraj Singh Chauhan — MBBS,
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div> <span class="department-specialist-list-item-text">Dr. Suraj Singh Chauhan —
+                                    MBBS,
                                     MS, MCH
                                     Plastic Surgery & Reconstructive Surgery</span>
                             </li>
@@ -1065,21 +924,18 @@
 
             <div class="row align-items-center mb-5 pb-5 border-bottom" data-aos="fade-up" data-aos-duration="800">
                 <div class="col-lg-6 order-1 order-lg-1 mb-4 mb-lg-0">
-                    <div class="splide spec-slider-8 overflow-hidden shadow-lg p-3 bg-white"
+                    <div class="splide spec-slider-8 overflow-hidden shadow-lg p-1 bg-white"
                         style="border-radius: 30px;">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide"><img
-                                        src="https://lirp.cdn-website.com/69c0b277/dms3rep/multi/opt/Advanced%2BCentre%2Bfor%2BUpper%2BGI%2BEndoscopy%2Bat%2BPACE%2BHospitals-%2BHyderabad-%2BTelangana-%2BIndia-640w.jpg"
+                                <li class="splide__slide">
+                                    <img src="assets/img/all-images/service/indian_gastroenterology.png"
                                         alt="Gastroenterology"
                                         style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
                                 </li>
-                                <li class="splide__slide"><img
-                                        src="https://my.clevelandclinic.org/-/scassets/Images/org/health/articles/4949-colonoscopy"
-                                        alt="Gastroenterology"
-                                        style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
-                                </li>
-                                <li class="splide__slide"><img src="https://www.drpiyushranjan.com/img/ser/gastro.jpg"
+
+                                <li class="splide__slide">
+                                    <img src="assets/img/all-images/service/gastroenterology_services.png"
                                         alt="Gastroenterology"
                                         style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
                                 </li>
@@ -1088,64 +944,41 @@
                     </div>
                 </div>
                 <div class="col-lg-6 order-2 order-lg-2 padding-left">
-                    <div class="heading4">
-                        <div
-                            style="width:50px; height:5px; background:var(--ztc-text-text-12); border-radius:10px; margin-bottom: 20px;">
-                        </div>
-                        <h3
-                            style="font-size: 36px; font-weight: 700; color: var(--ztc-text-text-11); margin-bottom: 24px;">
+                    <div class="department-section heading4">
+                        <div class="upper-line"></div>
+                        <h3 class="department-title">
                             Gastroenterology</h3>
-                        <p style="font-size: 17px; line-height: 1.8; color: #494A4A; margin-bottom: 30px;">The
+                        <p class="department-description">The
                             Gastroenterology department specializes in diagnosing and treating digestive system
                             disorders involving the stomach, liver, pancreas, intestines, and gallbladder.</p>
-                        <hr style="border-top:1px dashed #DECCCA; margin-bottom: 30px;">
-                        <h5
-                            style="font-size: 20px; font-weight: 700; color: #02015A; margin-bottom: 24px; background: none; box-shadow: none; padding: 0;">
-                            Our Specialists:</h5>
-                        <ul style="list-style: none; padding-left: 0;">
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Prasad Bhate — MBBS, MD,
-                                    PGDGM, DM
-                                    Gastro</span>
+                        <hr class="department-divider">
+                        <h5 class="department-specialist">Our Specialists:</h5>
+                        <ul class="department-specialist-list">
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div>
+                                <span class="department-specialist-list-item-text">Dr. Prasad Bhate — MBBS, MD,
+                                    PGDGM, DM Gastro</span>
                             </li>
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Yogesh Bade — MBBS, DNB
-                                    (Medicine), DNB
-                                    (Gastro)</span>
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div> <span class="department-specialist-list-item-text">Dr. Yogesh Bade — MBBS, DNB
+                                    (Medicine), DNB (Gastro)</span>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="row align-items-center mb-5 pb-5 " data-aos="fade-up" data-aos-duration="800">
-                <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
-                    <div class="splide spec-slider-9 overflow-hidden shadow-lg p-3 bg-white"
+            <div class="row align-items-center mb-5 pb-5" data-aos="fade-up" data-aos-duration="800">
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="splide spec-slider-9 overflow-hidden shadow-lg p-1 bg-white"
                         style="border-radius: 30px;">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide"><img
-                                        src="https://www.medicaim.com/uploads/5d7e50d0-5a46-11e8-8fc5-bf61b50ce761/consultationenoncologie.jpg"
-                                        alt="Oncology"
-                                        style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
-                                </li>
-                                <li class="splide__slide"><img
-                                        src="https://birunihospital.com/media/2025/7/373/radio-oncologie.jpg"
-                                        alt="Oncology"
-                                        style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
-                                </li>
-                                <li class="splide__slide"><img
-                                        src="https://content.jdmagicbox.com/comp/varanasi/e7/0542px542.x542.220110124600.x3e7/catalogue/advance-cancer-care-dr-anuj-singh-and-dr-anushree-chaturvedi-sunderpur-varanasi-oncologists-usywpc8fv1.jpg"
+                                <li class="splide__slide"><img src="assets/img/all-images/service/indian_oncology.png"
                                         alt="Oncology"
                                         style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: 24px;">
                                 </li>
@@ -1154,30 +987,21 @@
                     </div>
                 </div>
                 <div class="col-lg-6 order-2 order-lg-1 padding-right">
-                    <div class="heading4">
-                        <div
-                            style="width:50px; height:5px; background:var(--ztc-text-text-12); border-radius:10px; margin-bottom: 20px;">
-                        </div>
-                        <h3
-                            style="font-size: 36px; font-weight: 700; color: var(--ztc-text-text-11); margin-bottom: 24px;">
+                    <div class="department-section heading4">
+                        <div class="upper-line"></div>
+                        <h3 class="department-title">
                             Oncology</h3>
-                        <p style="font-size: 17px; line-height: 1.8; color: #494A4A; margin-bottom: 30px;">The Oncology
+                        <p class="department-description">The Oncology
                             department provides specialized care for cancer diagnosis, treatment, and management through
                             advanced oncology services and multidisciplinary care.</p>
-                        <hr style="border-top:1px dashed #DECCCA; margin-bottom: 30px;">
-                        <h5
-                            style="font-size: 20px; font-weight: 700; color: #02015A; margin-bottom: 24px; background: none; box-shadow: none; padding: 0;">
-                            Our Specialist:</h5>
-                        <ul style="list-style: none; padding-left: 0;">
-                            <li
-                                style="margin-bottom: 15px; font-size: 17px; font-weight: 500; color: #31353D; display: flex; align-items: start;">
-                                <div
-                                    style="background: rgba(68, 22, 255, 0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; margin-top:2px; flex-shrink: 0;">
-                                    <i class="fa-solid fa-user-doctor"
-                                        style="color: var(--ztc-text-text-12); font-size: 14px;"></i>
-                                </div> <span style="line-height:1.6; margin-top:2px;">Dr. Gaurav Jaswal — MBBS, MD
-                                    Radiation
-                                    Oncology</span>
+                        <hr class="department-divider">
+                        <h5 class="department-specialist">Our Specialist:</h5>
+                        <ul class="department-specialist-list">
+                            <li class="department-specialist-list-item">
+                                <div class="department-specialist-list-item-icon">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div> <span class="department-specialist-list-item-text">Dr. Gaurav Jaswal — MBBS, MD
+                                    Radiation Oncology </span>
                             </li>
                         </ul>
                     </div>
@@ -1270,11 +1094,15 @@
 
                         <h3 style="font-size: 32px; font-weight: 700; color: white; margin-bottom: 24px;">Our Commitment
                             to Patient Care</h3>
-                        <p style="font-size: 17px; line-height: 1.8; color: #E0E4EC; margin-bottom: 20px;">At Medicool
+                        <p
+                            style="font-size: 17px; line-height: 1.8; color: #E0E4EC; margin-bottom: 20px; text-align: justify;">
+                            At Medicool
                             Hospital, we believe that quality healthcare is built on trust, expertise, and compassion.
                             Our goal is not only to treat illness but also to promote preventive healthcare and
                             long-term wellness for individuals and families.</p>
-                        <p style="font-size: 17px; line-height: 1.8; color: #E0E4EC; margin-bottom: 40px;">We are
+                        <p
+                            style="font-size: 17px; line-height: 1.8; color: #E0E4EC; margin-bottom: 40px; text-align: justify;">
+                            We are
                             committed to providing safe, reliable, and advanced healthcare services while ensuring every
                             patient receives respectful and personalized medical care.</p>
 
@@ -1301,6 +1129,176 @@
         </div>
     </div>
     <!--===== WHY CHOOSE US AREA ENDS =======-->
+
+
+    <!--===== TESTIMONIAL AREA STARTS =======-->
+    <div class="testimonial4-section-area sp1"
+        style="background-image: url(assets/img/all-images/bg/bg6.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <img loading="lazy" src="assets/img/elements/elements12.png" alt="Decorative background sparkle element"
+            class="elements12 keyframe5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 m-auto">
+                    <div class="heading4 text-center">
+                        <h5 class="vl-section-subtitle">Medicool Hospital<span style="color: var(--ztc-text-text-11)"> |
+                            </span> Google
+                            Reviews<svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8"
+                                fill="none">
+                                <path d="M0.667969 4.00033H11.049M8.00137 7.33366L11.3346 4.00033L8.0013 0.666992"
+                                    stroke="#02015A" stroke-width="1.5"></path>
+                            </svg>
+                        </h5>
+                        <div class="space24"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+                    <script src="https://elfsightcdn.com/platform.js" async></script>
+                    <div class="elfsight-app-6ba56a0b-e87e-44e0-bdc1-5d23f83e24fd" data-elfsight-app-lazy></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===== TESTIMONIAL AREA ENDS =======-->
+
+    <!-- ===== CONTACT AREA STARTS ===== -->
+
+    <div class="contact-inner-section-area sp2" style="padding: 80px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 m-auto">
+                    <div class="heading4 text-center space-margin60" data-aos="fade-up" data-aos-duration="800">
+                        <h5 class="vl-section-subtitle"
+                            style="background: white; padding: 8px 16px; border-radius: 20px; display: inline-block; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                            MEDICOOL Hospital <span style="color:var(--ztc-text-text-11);"> | </span> Caring for Your
+                            Health
+                        </h5>
+                        <div class="space24"></div>
+                        <h2 class="vl-section-title text-anime-style-3">
+                            Get in Touch with Our Medical Experts
+                        </h2>
+                        <p style="color: #6c757d; font-size: 1.1rem; margin-top: 15px;">We are here to help you 24/7.
+                            Reach out to us for any medical assistance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="images reveal"
+                        style="border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.15); border: 5px solid white;">
+                        <img src="assets/img/all-images/service/ContactCTA (1).png"
+                            alt="Strategic healthcare location and expert contact representation"
+                            style="width: 100%; height: auto; object-fit: cover; transition: transform 0.5s ease;"
+                            onmouseover="this.style.transform='scale(1.05)'"
+                            onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="row g-4 mb-4">
+                        <!-- Phone Card -->
+                        <div class="col-md-6">
+                            <div class="contact-card p-4 rounded-4"
+                                style="background: white; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 5px 20px rgba(0,0,0,0.03); transition: all 0.3s ease; height: 100%;"
+                                onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'"
+                                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 20px rgba(0,0,0,0.03)'">
+                                <div class="icon-wrapper mb-3"
+                                    style="width: 50px; height: 50px; background: #ebf5ff; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M14.05 6C15.0268 6.19057 15.9244 6.66826 16.6281 7.37194C17.3318 8.07561 17.8095 8.97326 18 9.95M14.05 2C16.0793 2.22544 17.9716 3.13417 19.4163 4.57701C20.8609 6.01984 21.7721 7.91101 22 9.94M18.5 21C9.93959 21 3 14.0604 3 5.5C3 5.11378 3.01413 4.73086 3.04189 4.35173C3.07375 3.91662 3.08968 3.69907 3.2037 3.50103C3.29814 3.33701 3.4655 3.18146 3.63598 3.09925C3.84181 3 4.08188 3 4.56201 3H7.37932C7.78308 3 7.98496 3 8.15802 3.06645C8.31089 3.12515 8.44701 3.22049 8.55442 3.3441C8.67601 3.48403 8.745 3.67376 8.88299 4.05321L10.0491 7.26005C10.2096 7.70153 10.2899 7.92227 10.2763 8.1317C10.2643 8.31637 10.2012 8.49408 10.0942 8.64506C9.97286 8.81628 9.77145 8.93713 9.36863 9.17882L8 10C9.2019 12.6489 11.3501 14.7999 14 16L14.8212 14.6314C15.0629 14.2285 15.1837 14.0271 15.3549 13.9058C15.5059 13.7988 15.6836 13.7357 15.8683 13.7237C16.0777 13.7101 16.2985 13.7904 16.74 13.9509L19.9468 15.117C20.3262 15.255 20.516 15.324 20.6559 15.4456C20.7795 15.553 20.8749 15.6891 20.9335 15.842C21 16.015 21 16.2169 21 16.6207V19.438C21 19.9181 21 20.1582 20.9007 20.364C20.8185 20.5345 20.663 20.7019 20.499 20.7963C20.3009 20.9103 20.0834 20.9262 19.6483 20.9581C19.2691 20.9859 18.8862 21 18.5 21Z"
+                                            stroke="#0056b3" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                                <h5 style="color: #31353D; font-weight: 600; margin-bottom: 5px;">Call Us</h5>
+                                <a href="tel:+919876543210"
+                                    style="color: #6c757d; text-decoration: none; font-size: 1.1rem; display: block;">+91
+                                    98765 43210</a>
+                                <div class="mt-3">
+                                    <a href="tel:+919876543210" class="btn btn-primary btn-sm rounded-pill px-4"
+                                        style="background: var(--ztc-text-text-11); border: none;">Call Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email Card -->
+                        <div class="col-md-6">
+                            <div class="contact-card p-4 rounded-4"
+                                style="background: white; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 5px 20px rgba(0,0,0,0.03); transition: all 0.3s ease; height: 100%;"
+                                onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'"
+                                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 20px rgba(0,0,0,0.03)'">
+                                <div class="icon-wrapper mb-3"
+                                    style="width: 50px; height: 50px; background: #fff0f0; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M4 18L9 12M20 18L15 12M3 8L10.225 12.8166C10.8665 13.2443 11.1872 13.4582 11.5339 13.5412C11.8403 13.6147 12.1597 13.6147 12.4661 13.5412C12.8128 13.4582 13.1335 13.2443 13.775 12.8166L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
+                                            stroke="#dc3545" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                                <h5 style="color: #31353D; font-weight: 600; margin-bottom: 5px;">Email Us</h5>
+                                <a href="mailto:info@medicoolhospital.com"
+                                    style="color: #6c757d; text-decoration: none; font-size: 1rem; display: block; word-break: break-all;">info@medicoolhospital.com</a>
+                                <div class="mt-3">
+                                    <a href="mailto:info@medicoolhospital.com"
+                                        class="btn btn-outline-danger btn-sm rounded-pill px-4"
+                                        style="border-width: 2px;">Email Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timing Card -->
+                        <div class="col-md-12">
+                            <div class="contact-card p-4 rounded-4"
+                                style="background: white; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 5px 20px rgba(0,0,0,0.03); transition: all 0.3s ease;"
+                                onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'"
+                                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 20px rgba(0,0,0,0.03)'">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-wrapper me-3"
+                                        style="width: 50px; height: 50px; background: #e6f8f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <circle cx="12" cy="12" r="9" stroke="#198754" stroke-width="2" />
+                                            <path d="M12 7V12L15 14" stroke="#198754" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h5 style="color: #31353D; font-weight: 600; margin-bottom: 2px;">OPD Hours</h5>
+                                        <div style="color: #6c757d; font-size: 1rem;">Mon - Sat: 9:00 AM – 8:00 PM</div>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <span class="badge bg-danger rounded-pill px-3 py-2"
+                                            style="font-size: 0.9rem; font-weight: 500;">24/7 Emergency</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-12">
+                    <div style="padding: 10px; background: white; border-radius: 20px; border: 1px solid #e9ecef;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.991299807198!2d73.79294841042875!3d18.619461082420354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9c3fdf018ed%3A0xac7ccb8f8e86e734!2sMedicool%20Hospital!5e0!3m2!1sen!2sin!4v1773811688780!5m2!1sen!2sin"
+                            style="border:0; width: 100%; height: 400px; border-radius: 15px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CONTACT AREA ENDS ===== -->
+
     <!--===== FOOTER AREA STARTS =======-->
     <div class="vl-footer4-section-area"
         style="background-image: url(assets/img/all-images/bg/bg4.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
