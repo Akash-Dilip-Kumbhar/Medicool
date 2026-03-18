@@ -548,11 +548,11 @@
     loop: true,
     margin: 30,
     nav: false,
-    dots: true,
+    dots: false,
     items: 1,
     autoplay: true,
     smartSpeed: 2000,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 6000,
     responsiveClass: true,
     responsive: {
       0: {

@@ -24,6 +24,55 @@
 
 
     <!--=====  JS SCRIPT LINK =======-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <style>
+        .specialist-sidebar-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--ztc-text-text-11);
+            border-bottom: 2px solid #f4f0ff;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .specialist-sidebar-card {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            background: #fff;
+            border-radius: 16px;
+        }
+
+        .specialist-doc-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 3px solid #F4F0FF;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .specialist-doc-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .specialist-doc-info h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--ztc-text-text-11);
+            margin-bottom: 4px;
+        }
+
+        .specialist-doc-info p {
+            font-size: 13px;
+            color: #4416FF;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
@@ -84,9 +133,10 @@
                                     <li><a href="#">Departments <span class="arrow-size"><i
                                                     class="fa-solid fa-angle-down d-lg-inline d-none"></i></span></a>
                                         <ul class="sub-menu">
-                                            <li><a href="general-surgery.html">General Surgery</a></li>
+                                            <li><a class="active" href="general-surgery.html">General Surgery</a></li>
                                             <li><a href="general-medicine.html">General Medicine</a></li>
-                                            <li><a href="gynaecology.html">Obstetrics & Gynecology</a></li>
+                                            <li><a href="gynaecology.html">Obstetrics & Gynecology</a>
+                                            </li>
                                             <li><a href="pediatrics-patient.html">Pediatrics</a></li>
                                             <li><a href="orthopaedics.html">Orthopedics</a></li>
                                             <li><a href="ent.html">ENT (Ear, Nose & Throat)</a></li>
@@ -97,7 +147,7 @@
                                         </ul>
                                     </li>
                                     <li><a href="doctor.html">Doctors</a></li>
-                                   
+                                    <li><a href="gallery.html">Gallery</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -201,26 +251,13 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="service-main-siderbar-area">
-                        <div class="search-area">
-                            <h3>Search</h3>
-                            <div class="space24"></div>
-                            <form>
-                                <input type="text" placeholder="Search...">
-                                <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                                        viewBox="0 0 22 22" fill="none">
-                                        <path
-                                            d="M19.25 19.25L13.75 13.75M2.75 9.16667C2.75 10.0093 2.91597 10.8437 3.23844 11.6222C3.56091 12.4007 4.03356 13.1081 4.6294 13.7039C5.22524 14.2998 5.93261 14.7724 6.71111 15.0949C7.48962 15.4174 8.32402 15.5833 9.16667 15.5833C10.0093 15.5833 10.8437 15.4174 11.6222 15.0949C12.4007 14.7724 13.1081 14.2998 13.7039 13.7039C14.2998 13.1081 14.7724 12.4007 15.0949 11.6222C15.4174 10.8437 15.5833 10.0093 15.5833 9.16667C15.5833 8.32402 15.4174 7.48962 15.0949 6.71111C14.7724 5.93261 14.2998 5.22524 13.7039 4.6294C13.1081 4.03356 12.4007 3.56091 11.6222 3.23844C10.8437 2.91597 10.0093 2.75 9.16667 2.75C8.32402 2.75 7.48962 2.91597 6.71111 3.23844C5.93261 3.56091 5.22524 4.03356 4.6294 4.6294C4.03356 5.22524 3.56091 5.93261 3.23844 6.71111C2.91597 7.48962 2.75 8.32402 2.75 9.16667Z"
-                                            stroke="#1C293F" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
-                                    </svg></button>
-                            </form>
-                        </div>
-                        <div class="space30"></div>
+                      
+                 
                         <div class="categories-area">
                             <h3>Our Services</h3>
                             <div class="space4"></div>
                             <ul>
-                                <li><a href="general-surgery.html">General Surgery <span><i
+                                <li><a href="general-surgery.html" class="active">General Surgery <span><i
                                                 class="fa-solid fa-angle-right"></i></span></a></li>
                                 <li><a href="general-medicine.html">General Medicine <span><i
                                                 class="fa-solid fa-angle-right"></i></span></a></li>
@@ -243,19 +280,45 @@
                             </ul>
                         </div>
                         <div class="space30"></div>
-                        <div class="open-hours-box">
-                            <h3>Our Opening Hours</h3>
-                            <div class="space24"></div>
-                            <ul>
-                                <li><span><a href="#">Mon-Wed</a></span> <span><a href="#">8:00 AM - 7:00
-                                            PM</a></span>
-                                </li>
-                                <li><span><a href="#">Thu-Mon</a></span> <span><a href="#">8:00 AM - 6:00
-                                            PM</a></span>
-                                </li>
-                                <li><span><a href="#">Friday</a></span> <span><a href="#">Full Day Closed</a></span>
-                                </li>
-                            </ul>
+                        
+                        <div class="categories-area specialists-box">
+                            <h3 class="specialist-sidebar-title">Our Specialists</h3>
+                            <div class="doctor-minimal-card specialist-sidebar-card">
+                                <div class="doc-img specialist-doc-img">
+                                    <img src="assets/img/all-images/avataar/doc-fe-9.png" alt="Dr. Barkha Kukreja">
+                                </div>
+                                <div class="doc-info specialist-doc-info">
+                                    <h4>Dr. Barkha Kukreja</h4>
+                                    <p>MBBS, MS</p>
+                                </div>
+                            </div>
+                            <div class="doctor-minimal-card specialist-sidebar-card">
+                                <div class="doc-img specialist-doc-img">
+                                    <img src="assets/img/all-images/avataar/doc-fe-9.png" alt="Dr. Kanchan Waykole">
+                                </div>
+                                <div class="doc-info specialist-doc-info">
+                                    <h4>Dr. Kanchan Waykole</h4>
+                                    <p>MBBS, MS</p>
+                                </div>
+                            </div>
+                            <div class="doctor-minimal-card specialist-sidebar-card">
+                                <div class="doc-img specialist-doc-img">
+                                    <img src="assets/img/all-images/avataar/doc-me-2.png" alt="Dr. Pawan Dharurkar">
+                                </div>
+                                <div class="doc-info specialist-doc-info">
+                                    <h4>Dr. Pawan Dharurkar</h4>
+                                    <p>MBBS, MS</p>
+                                </div>
+                            </div>
+                            <div class="doctor-minimal-card specialist-sidebar-card">
+                                <div class="doc-img specialist-doc-img">
+                                    <img src="assets/img/all-images/avataar/doc-me-2.png" alt="Dr. Kamlakar Haran">
+                                </div>
+                                <div class="doc-info specialist-doc-info">
+                                    <h4>Dr. Kamlakar Haran</h4>
+                                    <p>MBBS, DNB</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -415,7 +478,7 @@
     <!--===== SERVICE 4 SECTION AREA STARTS =======-->
     <div class="service4-section-area sp1">
         <img src="assets/img/elements/elements12.png" alt="" class="elements12 keyframe5">
-        <div class="container">
+        <div class="container " style="overflow: hidden;">
             <div class="row">
                 <div class="col-lg-8 m-auto">
                     <div class="heading4 text-center space-margin60">
@@ -433,217 +496,251 @@
 
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="service4-slider-area owl-carousel">
-                                <div class="service4-boxarea">
-                                    <div class="content-area">
-                                        <a href="general-medicine.html" class="title">General Medicine</a>
-                                        <div class="space16"></div>
-                                        <p>Comprehensive and expert care for General Medicine.</p>
-                                        <div class="space24"></div>
-                                        <a href="general-medicine.html" class="readmore">
-                                            Learn More
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
-                                                    fill="#4416FF"></path>
-                                            </svg>
-                                        </a>
+                    <div class="splide departmental-slider">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="service4-boxarea">
+                                        <div class="content-area">
+                                            <a href="general-medicine.html" class="title">General Medicine</a>
+                                            <div class="space16"></div>
+                                            <p>Comprehensive and expert care for General Medicine.</p>
+                                            <div class="space24"></div>
+                                            <a href="general-medicine.html" class="readmore">
+                                                Learn More
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
+                                                        fill="#4416FF"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="img1 image-anime">
+                                            <img loading="lazy"
+                                                src="assets/img/all-images/service/indian_general_medicine.png"
+                                                alt="Modern diagnosis room for General Medicine">
+                                        </div>
                                     </div>
-                                    <div class="img1 image-anime">
-                                        <img loading="lazy"
-                                            src="assets/img/all-images/service/indian_general_medicine.png" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="service4-boxarea">
+                                        <div class="content-area">
+                                            <a href="general-surgery.html" class="title">General Surgery</a>
+                                            <div class="space16"></div>
+                                            <p>Comprehensive and expert care for General Surgery.</p>
+                                            <div class="space24"></div>
+                                            <a href="general-surgery.html" class="readmore">
+                                                Learn More
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
+                                                        fill="#4416FF"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="img1 image-anime">
+                                            <img loading="lazy"
+                                                src="assets/img/all-images/service/indian_general_surgery.png"
+                                                alt="Surgical medical professionals performing a procedure">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="service4-boxarea">
-                                    <div class="content-area">
-                                        <a href="general-surgery.html" class="title">General Surgery</a>
-                                        <div class="space16"></div>
-                                        <p>Comprehensive and expert care for General Surgery.</p>
-                                        <div class="space24"></div>
-                                        <a href="general-surgery.html" class="readmore">
-                                            Learn More
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
-                                                    fill="#4416FF"></path>
-                                            </svg>
-                                        </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="service4-boxarea">
+                                        <div class="content-area">
+                                            <a href="pediatrics-patient.html" class="title">Pediatrics</a>
+                                            <div class="space16"></div>
+                                            <p>Comprehensive and expert care for Pediatrics.</p>
+                                            <div class="space24"></div>
+                                            <a href="pediatrics-patient.html" class="readmore">
+                                                Learn More
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
+                                                        fill="#4416FF"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="img1 image-anime">
+                                            <img loading="lazy"
+                                                src="assets/img/all-images/service/indian_paediatrics.png"
+                                                alt="Caring and colorful environment for Pediatrics patient">
+                                        </div>
                                     </div>
-                                    <div class="img1 image-anime">
-                                        <img loading="lazy"
-                                            src="assets/img/all-images/service/indian_general_surgery.png" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="service4-boxarea">
+                                        <div class="content-area">
+                                            <a href="gynaecology.html" class="title">Obstetrics & Gynecology</a>
+                                            <div class="space16"></div>
+                                            <p>Comprehensive and expert care for Obstetrics & Gynecology.</p>
+                                            <div class="space24"></div>
+                                            <a href="gynaecology.html" class="readmore">
+                                                Learn More
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
+                                                        fill="#4416FF"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="img1 image-anime">
+                                            <img loading="lazy"
+                                                src="assets/img/all-images/service/indian_gynaecology.png"
+                                                alt="Comfortable consultation area for Obstetrics & Gynecology">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="service4-boxarea">
-                                    <div class="content-area">
-                                        <a href="pediatrics-patient.html" class="title">Pediatrics</a>
-                                        <div class="space16"></div>
-                                        <p>Comprehensive and expert care for Pediatrics.</p>
-                                        <div class="space24"></div>
-                                        <a href="pediatrics-patient.html" class="readmore">
-                                            Learn More
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
-                                                    fill="#4416FF"></path>
-                                            </svg>
-                                        </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="service4-boxarea">
+                                        <div class="content-area">
+                                            <a href="orthopaedics.html" class="title">Orthopedics</a>
+                                            <div class="space16"></div>
+                                            <p>Comprehensive and expert care for Orthopedics.</p>
+                                            <div class="space24"></div>
+                                            <a href="orthopaedics.html" class="readmore">
+                                                Learn More
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
+                                                        fill="#4416FF"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="img1 image-anime">
+                                            <img loading="lazy"
+                                                src="assets/img/all-images/service/indian_orthopaedics.png"
+                                                alt="State-of-the-art Orthopedic treatment facility">
+                                        </div>
                                     </div>
-                                    <div class="img1 image-anime">
-                                        <img loading="lazy" src="assets/img/all-images/service/indian_paediatrics.png"
-                                            alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="service4-boxarea">
+                                        <div class="content-area">
+                                            <a href="cosmetology.html" class="title">Cosmetology</a>
+                                            <div class="space16"></div>
+                                            <p>Comprehensive and expert care for Cosmetology.</p>
+                                            <div class="space24"></div>
+                                            <a href="cosmetology.html" class="readmore">
+                                                Learn More
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
+                                                        fill="#4416FF"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="img1 image-anime">
+                                            <img loading="lazy"
+                                                src="assets/img/all-images/service/indian_cosmetology.png"
+                                                alt="Premium Cosmetology and skin treatment clinic">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="service4-boxarea">
-                                    <div class="content-area">
-                                        <a href="gynaecology.html" class="title">Obstetrics & Gynecology</a>
-                                        <div class="space16"></div>
-                                        <p>Comprehensive and expert care for Obstetrics & Gynecology.</p>
-                                        <div class="space24"></div>
-                                        <a href="gynaecology.html" class="readmore">
-                                            Learn More
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
-                                                    fill="#4416FF"></path>
-                                            </svg>
-                                        </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="service4-boxarea">
+                                        <div class="content-area">
+                                            <a href="plastic-surgery.html" class="title">Plastic Surgery</a>
+                                            <div class="space16"></div>
+                                            <p>Comprehensive and expert care for Plastic Surgery.</p>
+                                            <div class="space24"></div>
+                                            <a href="plastic-surgery.html" class="readmore">
+                                                Learn More
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
+                                                        fill="#4416FF"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="img1 image-anime">
+                                            <img loading="lazy"
+                                                src="assets/img/all-images/service/indian_plastic_surgery.png"
+                                                alt="Advanced Plastic Surgery medical infrastructure">
+                                        </div>
                                     </div>
-                                    <div class="img1 image-anime">
-                                        <img loading="lazy" src="assets/img/all-images/service/indian_gynaecology.png"
-                                            alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="service4-boxarea">
+                                        <div class="content-area">
+                                            <a href="gastroenterology.html" class="title">Gastroenterology</a>
+                                            <div class="space16"></div>
+                                            <p>Comprehensive and expert care for Gastroenterology.</p>
+                                            <div class="space24"></div>
+                                            <a href="gastroenterology.html" class="readmore">
+                                                Learn More
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
+                                                        fill="#4416FF"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="img1 image-anime">
+                                            <img loading="lazy"
+                                                src="assets/img/all-images/service/indian_gastroenterology.png"
+                                                alt="High-tech Gastroenterology diagnostic lab">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="service4-boxarea">
-                                    <div class="content-area">
-                                        <a href="orthopaedics.html" class="title">Orthopedics</a>
-                                        <div class="space16"></div>
-                                        <p>Comprehensive and expert care for Orthopedics.</p>
-                                        <div class="space24"></div>
-                                        <a href="orthopaedics.html" class="readmore">
-                                            Learn More
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
-                                                    fill="#4416FF"></path>
-                                            </svg>
-                                        </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="service4-boxarea">
+                                        <div class="content-area">
+                                            <a href="oncology.html" class="title">Oncology</a>
+                                            <div class="space16"></div>
+                                            <p>Comprehensive and expert care for Oncology.</p>
+                                            <div class="space24"></div>
+                                            <a href="oncology.html" class="readmore">
+                                                Learn More
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
+                                                        fill="#4416FF"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="img1 image-anime">
+                                            <img loading="lazy" src="assets/img/all-images/service/indian_oncology.png"
+                                                alt="Comprehensive Oncology care and consultation unit">
+                                        </div>
                                     </div>
-                                    <div class="img1 image-anime">
-                                        <img loading="lazy" src="assets/img/all-images/service/indian_orthopaedics.png"
-                                            alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="service4-boxarea">
+                                        <div class="content-area">
+                                            <a href="ent.html" class="title">ENT (Ear, Nose & Throat)</a>
+                                            <div class="space16"></div>
+                                            <p>Comprehensive and expert care for ENT (Ear, Nose & Throat).</p>
+                                            <div class="space24"></div>
+                                            <a href="ent.html" class="readmore">
+                                                Learn More
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
+                                                        fill="#4416FF"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="img1 image-anime">
+                                            <img loading="lazy" src="assets/img/all-images/service/indian_ent.png"
+                                                alt="ENT specialist consultation and treatment room">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="service4-boxarea">
-                                    <div class="content-area">
-                                        <a href="cosmetology.html" class="title">Cosmetology</a>
-                                        <div class="space16"></div>
-                                        <p>Comprehensive and expert care for Cosmetology.</p>
-                                        <div class="space24"></div>
-                                        <a href="cosmetology.html" class="readmore">
-                                            Learn More
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
-                                                    fill="#4416FF"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <div class="img1 image-anime">
-                                        <img loading="lazy" src="assets/img/all-images/service/indian_cosmetology.png"
-                                            alt="">
-                                    </div>
-                                </div>
-                                <div class="service4-boxarea">
-                                    <div class="content-area">
-                                        <a href="plastic-surgery.html" class="title">Plastic Surgery</a>
-                                        <div class="space16"></div>
-                                        <p>Comprehensive and expert care for Plastic Surgery.</p>
-                                        <div class="space24"></div>
-                                        <a href="plastic-surgery.html" class="readmore">
-                                            Learn More
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
-                                                    fill="#4416FF"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <div class="img1 image-anime">
-                                        <img loading="lazy"
-                                            src="assets/img/all-images/service/indian_plastic_surgery.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="service4-boxarea">
-                                    <div class="content-area">
-                                        <a href="gastroenterology.html" class="title">Gastroenterology</a>
-                                        <div class="space16"></div>
-                                        <p>Comprehensive and expert care for Gastroenterology.</p>
-                                        <div class="space24"></div>
-                                        <a href="gastroenterology.html" class="readmore">
-                                            Learn More
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
-                                                    fill="#4416FF"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <div class="img1 image-anime">
-                                        <img loading="lazy"
-                                            src="assets/img/all-images/service/indian_gastroenterology.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="service4-boxarea">
-                                    <div class="content-area">
-                                        <a href="oncology.html" class="title">Oncology</a>
-                                        <div class="space16"></div>
-                                        <p>Comprehensive and expert care for Oncology.</p>
-                                        <div class="space24"></div>
-                                        <a href="oncology.html" class="readmore">
-                                            Learn More
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
-                                                    fill="#4416FF"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <div class="img1 image-anime">
-                                        <img loading="lazy" src="assets/img/all-images/service/indian_oncology.png"
-                                            alt="">
-                                    </div>
-                                </div>
-                                <div class="service4-boxarea">
-                                    <div class="content-area">
-                                        <a href="ent.html" class="title">ENT (Ear, Nose & Throat)</a>
-                                        <div class="space16"></div>
-                                        <p>Comprehensive and expert care for ENT (Ear, Nose & Throat).</p>
-                                        <div class="space24"></div>
-                                        <a href="ent.html" class="readmore">
-                                            Learn More
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z"
-                                                    fill="#4416FF"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <div class="img1 image-anime">
-                                        <img loading="lazy" src="assets/img/all-images/service/indian_ent.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -653,28 +750,17 @@
     <!--===== FOOTER AREA STARTS =======-->
     <div class="vl-footer4-section-area"
         style="background-image: url(assets/img/all-images/bg/bg4.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
-        <div class="container">
+        <div class="container" style="overflow: hidden;">
             <div class="row">
                 <div class="col-lg-5 col-md-6">
                     <div class="footer-description-area">
-                        <img loading="lazy" src="assets/img/logo/logo1.webp" alt="">
+                        <img loading="lazy" src="assets/img/logo/logo1.webp" alt="Medicool Hospital Footer Logo">
                         <div class="space24"></div>
                         <p>Our mission is simple yet profound: to empower individuals and families in our
                             community to
                             live healthier, happier lives.</p>
-                        <div class="space28"></div>
-                        <div class="footer-form-area">
-                            <form>
-                                <input type="text" placeholder="Enter Your Email ">
-                                <button type="submit" class="vl-btn4">Subscribe Now <span><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                                            viewBox="0 0 22 22" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M11 0.25C5.06294 0.25 0.25 5.06294 0.25 11C0.25 16.9371 5.06294 21.75 11 21.75C16.9371 21.75 21.75 16.9371 21.75 11C21.75 5.06294 16.9371 0.25 11 0.25ZM10 7C9.5955 7 9.2309 7.24364 9.0761 7.61732C8.92134 7.99099 9.0069 8.42111 9.2929 8.70711L10.5858 10L7.29289 13.2929C6.90237 13.6834 6.90237 14.3166 7.29289 14.7071C7.68342 15.0976 8.31658 15.0976 8.70711 14.7071L12 11.4142L13.2929 12.7071C13.5789 12.9931 14.009 13.0787 14.3827 12.9239C14.7564 12.7691 15 12.4045 15 12V8C15 7.44772 14.5523 7 14 7H10Z"
-                                                fill="white"></path>
-                                        </svg></span></button>
-                            </form>
-                        </div>
+
+
                     </div>
                 </div>
                 <div class="col-lg col-md-6">
@@ -683,9 +769,8 @@
                         <h3>Quick Links</h3>
                         <ul>
                             <li><a href="about.html">About Us</a></li>
-                            <li><a href="service.html">Our Services</a></li>
                             <li><a href="doctor.html">Our Doctors</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
                         </ul>
                     </div>
                 </div>
@@ -721,17 +806,7 @@
                                             stroke="#31353D" stroke-width="1.6" stroke-linecap="round"
                                             stroke-linejoin="round"></path>
                                     </svg> +91 98348 89938</a></li>
-                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none">
-                                        <path
-                                            d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
-                                            stroke="#31353D" stroke-width="1.6" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
-                                        <path
-                                            d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
-                                            stroke="#31353D" stroke-width="1.6" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
-                                    </svg> Kalewadi, Pimpri-Chinchwad, Pune, Maharashtra 411017</a></li>
+
                             <li><a href="mailto:info@medicoolhospital.com"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none">
                                         <path
@@ -752,19 +827,24 @@
             </div>
             <div class="space100"></div>
             <div class="col-lg-12">
-                <div class="copyright-area">
-                    <a href="#">© Copyright 2025 Medicool Hospital. All Right Reserved</a>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a><span> | </span></li>
-                        <li><a href="#">Terms Of Condition</a></li>
-                    </ul>
+                <div class="copyright-area justify-content-center">
+                    <a>© Copyright 2025 Medicool Hospital. All Right Reserved</a>
                 </div>
             </div>
         </div>
     </div>
     <!--===== FOOTER AREA ENDS =======-->
 
+    <!-- Whatsapp Floating Btn -->
+    <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float">
+
+        <i class="fa-brands fa-whatsapp text-white"></i>
+    </a>
+    <!-- whastspp flaoting btn end -->
+
     <!--===== JS SCRIPT LINK =======-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script defer src="assets/js/plugins/bootstrap.min.js"></script>
     <script defer src="assets/js/plugins/fontawesome.js"></script>
     <script defer src="assets/js/plugins/aos.js"></script>
@@ -783,6 +863,63 @@
     <script defer src="assets/js/plugins/circle-progress.js"></script>
     <script defer src="assets/js/plugins/swiper.js"></script>
     <script defer src="assets/js/main.js"></script>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+
+            // ✅ DEPARTMENT SLIDER
+            var departmentSlider = document.querySelector('.departmental-slider');
+
+            if (departmentSlider) {
+                new Splide(departmentSlider, {
+                    type: 'loop',
+                    perPage: 4,
+                    perMove: 1,
+                    autoplay: true,
+                    interval: 2000,
+                    pauseOnHover: true,
+                    pauseOnFocus: false,
+                    arrows: true,
+                    pagination: false,
+                    gap: '30px',
+
+                    breakpoints: {
+                        1199: { perPage: 3 },
+                        991: { perPage: 2 },
+                        767: { perPage: 1 }
+                    }
+                }).mount();
+            }
+
+        });
+    </script>
+
+    <!-- Lenis FIRST -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.19/dist/lenis.min.js"></script>
+
+    <script>
+        window.addEventListener("load", function () {
+            const lenis = new Lenis({
+                duration: 1.5,
+                easing: (t) => 1 - Math.pow(1 - t, 3),
+                smooth: true,
+                smoothTouch: true
+            });
+
+            // RAF
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+            requestAnimationFrame(raf);
+
+
+        });
+
+    </script>
 
 </body>
 
