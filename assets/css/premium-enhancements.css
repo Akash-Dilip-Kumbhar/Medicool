@@ -57,3 +57,128 @@ img[loading="lazy"] {
     object-fit: cover;
     z-index: -1;
 }
+
+/* 5. Premium Counter Box */
+.premium-counter-box {
+   
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 15px 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  
+    transition: all 0.4s ease;
+    height: 100%;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 1;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.premium-counter-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(68, 22, 255, 0.1);
+    background: #fff;
+}
+
+.premium-counter-box .icon-area {
+    width: 60px;
+    height: 60px;
+    background: rgba(68, 22, 255, 0.08);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    font-size: 24px;
+    color: var(--ztc-text-text-12);
+    transition: all 0.4s ease;
+}
+
+.premium-counter-box:hover .icon-area {
+    background: var(--ztc-text-text-12);
+    color: #fff;
+}
+
+.premium-counter-box h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--ztc-text-text-11);
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.premium-counter-box p {
+    font-size: 16px;
+    color: #494A4A;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+/* 6. Benefites Widget Boxarea (Mission/Vision) */
+.benefites-widget-boxarea {
+    background: white;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+    height: 100%;
+    border-top: 5px solid var(--ztc-text-text-12);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.benefites-widget-boxarea:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.benefites-widget-boxarea-bg-shape {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    opacity: 0.3;
+    width: 150px;
+    z-index: 0;
+}
+
+.benefites-widget-boxarea-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background: rgba(68, 22, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.benefites-widget-boxarea-icon {
+    font-size: 28px;
+    color: var(--ztc-text-text-12);
+}
+
+.benefites-widget-boxarea-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--ztc-text-text-11);
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.benefites-widget-boxarea-desc {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #494A4A;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+    text-align: justify;
+}
