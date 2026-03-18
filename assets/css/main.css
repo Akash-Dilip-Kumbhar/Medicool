@@ -44,6 +44,7 @@ html,
 body {
     overflow-x: hidden;
     width: 100%;
+     scroll-behavior: auto
 }
 
 body {
@@ -11816,6 +11817,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .homepage1-body .vl-main-menu ul>li:hover a {
     color: var(--ztc-text-text-4);
+   
 }
 
 .homepage1-body .vl-main-menu ul>li:hover .sub-menu {
@@ -13037,6 +13039,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .homepage4-body .vl-main-menu ul>li:hover a {
     color: var(--ztc-text-text-12);
+    border-bottom:1px solid black;
 }
 
 .homepage4-body .vl-main-menu ul>li .sub-menu {
