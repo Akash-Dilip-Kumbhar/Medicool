@@ -108,6 +108,9 @@
     initScrollProgress();
     //========== PAGE PROGRESS STARTS ============= // 
 
+
+    
+
     //========== VIDEO POPUP STARTS ============= //
     function initYoutubePopup() {
       var youtubePopup = $(".popup-youtube");
@@ -134,6 +137,16 @@
     initHoverActive();
 
   });
+
+
+  //========== FIX PASSIVE EVENT ============= //
+  document.addEventListener('touchmove', function (e) {
+    if (e.target.closest('.cd-image-container') && e.cancelable) {
+      e.preventDefault();
+    }
+  }, { passive: false });
+
+
   //========== COUNTER UP============= //
   function initCounterUp() {
     const ucounter = $('.counter');
@@ -787,6 +800,15 @@ jQuery(document).ready(function ($) {
       container.find('.cd-image-label[data-type="modified"]'));
   });
 
+  $('.cd-image-container').each(function () {
+    var container = $(this);
+    drags(
+      container.find('.cd-handle'),
+      container.find('.cd-resize-img'),
+      container
+    );
+  });
+
   $(window).on('resize', function () {
     if (!resizing) {
       resizing = true;
@@ -813,32 +835,55 @@ jQuery(document).ready(function ($) {
     resizing = false;
   }
 
-  function drags(dragElement, resizeElement, container, labelContainer, labelResizeElement) {
-    dragElement.on("mousedown vmousedown", function (e) {
-      dragElement.addClass('draggable1');
-      resizeElement.addClass('resizable1');
+function drags(dragElement, resizeElement, container, labelContainer, labelResizeElement) {
 
-      var dragWidth = dragElement.outerWidth(),
-        xPosition = dragElement.offset().left + dragWidth - e.pageX,
-        containerOffset = container.offset().left,
-        containerWidth = container.outerWidth(),
-        minLeft = containerOffset + 10,
-        maxLeft = containerOffset + containerWidth - dragWidth - 10;
-      dragElement.parents().on("mousemove vmousemove", function (e) {
-        if (!dragging) {
-          dragging = true;
-          requestAnimationFrame(function () { animateDraggedHandle(e, xPosition, dragWidth, minLeft, maxLeft, containerOffset, containerWidth, resizeElement, labelContainer, labelResizeElement); });
-        }
-      }).on("mouseup vmouseup", function (e) {
-        dragElement.removeClass('draggable1');
-        resizeElement.removeClass('resizable1');
-      });
-      e.preventDefault();
-    }).on("mouseup vmouseup", function (e) {
+  dragElement.on("mousedown touchstart", function (e) {
+
+    if (e.cancelable) e.preventDefault();
+
+    dragElement.addClass('draggable1');
+    resizeElement.addClass('resizable1');
+
+    var dragWidth = dragElement.outerWidth(),
+      xPosition = dragElement.offset().left + dragWidth - (e.pageX || e.originalEvent.touches[0].pageX),
+      containerOffset = container.offset().left,
+      containerWidth = container.outerWidth(),
+      minLeft = containerOffset + 10,
+      maxLeft = containerOffset + containerWidth - dragWidth - 10;
+
+    dragElement.parents().on("mousemove touchmove", function (e) {
+
+      if (!dragging) {
+        dragging = true;
+
+        requestAnimationFrame(function () {
+          var pageX = e.pageX || (e.originalEvent.touches ? e.originalEvent.touches[0].pageX : 0);
+
+          animateDraggedHandle(
+            { pageX: pageX },
+            xPosition,
+            dragWidth,
+            minLeft,
+            maxLeft,
+            containerOffset,
+            containerWidth,
+            resizeElement,
+            labelContainer,
+            labelResizeElement
+          );
+        });
+      }
+
+    }).on("mouseup touchend", function () {
       dragElement.removeClass('draggable1');
       resizeElement.removeClass('resizable1');
     });
-  }
+
+  }).on("mouseup touchend", function () {
+    dragElement.removeClass('draggable1');
+    resizeElement.removeClass('resizable1');
+  });
+}
 
   function animateDraggedHandle(e, xPosition, dragWidth, minLeft, maxLeft, containerOffset, containerWidth, resizeElement, labelContainer, labelResizeElement) {
     var leftValue = e.pageX + xPosition - dragWidth;

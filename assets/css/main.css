@@ -4272,9 +4272,6 @@ body {
     border-radius: 8px;
 }
 
-.service-all-details-area .service-main-content-details .m-list-area {
-    border-bottom: 1px solid #E8EAEC;
-}
 
 .service-all-details-area .service-main-content-details .m-list-area .m-list li {
     color: var(--ztc-text-text-11);
@@ -6795,7 +6792,9 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .homepage4-body .vl-offcanvas-social a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;    
     text-align: center;
     width: 40px;
     height: 40px;
@@ -6818,7 +6817,9 @@ only screen and (min-width: 768px) and (max-width: 991px),
     transition: 0.45 easc-in-out;
     background: rgba(24, 24, 24, 0.4);
 }
-
+.cd-image-container {
+  touch-action: none;
+}
 .homepage4-body .vl-offcanvas-overlay-open {
     opacity: 0.7;
     visibility: visible;
@@ -10337,7 +10338,15 @@ only screen and (min-width: 768px) and (max-width: 991px),
 @media (max-width: 767px) {
     .vl-footer4-section-area .footer-widget-area.foot-padding2 {
         padding-left: 0;
+       
+    }    
+    .vl-footer4-section-area .footer-widget-area{
+ text-align: center;
     }
+    .vl-footer4-section-area .footer-widget-area ul li a{
+      justify-content: center;
+    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
