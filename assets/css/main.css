@@ -1,4 +1,4 @@
-﻿@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap");
 
 a,
 a:hover {
@@ -12986,7 +12986,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .homepage4-body .vl-transparent-header .vl-logo img {
     width: 200px !important;
-    height: fit-content !important;
+    height: auto !important;
     -o-object-fit: contain;
     object-fit: contain;
 }
