@@ -126,7 +126,75 @@
             font-weight: 700;
         }
     </style>
+    <style>
+        /* ===== ACTIVITY MASONRY ===== */
+        .activity-masonry {
+            column-count: 3;
+            column-gap: 20px;
+        }
 
+        .activity-item {
+            margin-bottom: 20px;
+            break-inside: avoid;
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+        }
+
+        .activity-item img,
+        .activity-item video {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 16px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        /* RANDOMIZED MASONRY HEIGHTS */
+        .activity-item:nth-child(even) img, .activity-item:nth-child(even) video { aspect-ratio: 3/4; }
+        .activity-item:nth-child(3n) img, .activity-item:nth-child(3n) video { aspect-ratio: 3/4; }
+        .activity-item:nth-child(5n) img, .activity-item:nth-child(5n) video { aspect-ratio: 1/1; }
+        .activity-item:nth-child(7n) img, .activity-item:nth-child(7n) video { aspect-ratio: 16/9; }
+
+        .activity-item:hover img,
+        .activity-item:hover video {
+            transform: scale(1.05);
+        }
+
+        /* VIDEO THUMB */
+        .video-thumb {
+            position: relative;
+        }
+
+        .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 992px) {
+            .activity-masonry {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .activity-masonry {
+                column-count: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -266,18 +334,19 @@
                     <div class="space20"></div>
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.youtube.com/@barkhakukreja1637"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.linkedin.com/in/barkha-kukreja-81a454209/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/in/barkha-kukreja-81a454209/"><i
+                            class="fab fa-linkedin-in"></i></a>
                     <a href="https://www.instagram.com/medicool.hospital"><i class="fab fa-instagram"></i></a>
                 </div>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/barkha-kukreja-81a454209/"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/barkha-kukreja-81a454209/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
+
         </div>
-        <div class="vl-offcanvas-overlay"></div>
+    </div>
+    <div class="vl-offcanvas-overlay"></div>
     </div>
     <!--===== MOBILE HEADER ENDS =======-->
 
@@ -336,118 +405,259 @@
                 <!-- Video Section -->
                 <div class="col-lg-6">
                     <div class="about-intro-video-wrapper position-relative" data-aos="fade-right"
-                            data-aos-duration="1000">
-                            <div class="video-container"
-                                style="border-radius: 24px; overflow: hidden; box-shadow: 0 20px 50px rgba(68, 22, 255, 0.12); border: 2px solid #F4F0FF; background: #000;">
-                                <video id="mainVideo" controls muted playsinline
-                                    style="width: 100%; display: block; object-fit: cover; aspect-ratio: 16/9;">
-                                    <source src="assets/img/all-images/hero/Hospital_Intro.mp4" type="video/mp4">
-                                </video>
-                            </div>
+                        data-aos-duration="1000">
+                        <div class="video-container"
+                            style="border-radius: 24px; overflow: hidden; box-shadow: 0 20px 50px rgba(68, 22, 255, 0.12); border: 2px solid #F4F0FF; background: #000;">
+                            <video id="mainVideo" controls muted playsinline
+                                style="width: 100%; display: block; object-fit: cover; aspect-ratio: 16/9;">
+                                <source src="assets/img/all-images/hero/Hospital_Intro.mp4" type="video/mp4">
+                            </video>
                         </div>
-                    </div>
-
-                    <!-- Text Section -->
-                    <div class="col-lg-6">
-
-
-                        <p class="about-section-desc aos-init aos-animate" data-aos="fade-left"
-                            data-aos-duration="1000">
-                            Medicool Hospital is a modern multi-specialty healthcare center committed to providing
-                            high-quality medical care with compassion, expertise, and advanced technology. Our hospital
-                            brings together experienced doctors, specialized medical departments, and modern healthcare
-                            facilities to deliver comprehensive diagnosis, treatment, and preventive healthcare
-                            services.
-                        </p>
-                        <p class="about-section-desc mt-3 aos-init aos-animate" data-aos="fade-left"
-                            data-aos-duration="1100">
-                            We focus on patient-centered healthcare, ensuring that every patient receives personalized
-                            treatment, accurate diagnosis, and continuous medical support. Whether it is routine health
-                            consultation, specialized surgery, or advanced medical treatment, Medicool Hospital strives
-                            to provide safe, ethical, and reliable healthcare services to the community.
-                        </p>
                     </div>
                 </div>
 
+                <!-- Text Section -->
+                <div class="col-lg-6">
+
+
+                    <p class="about-section-desc aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
+                        Medicool Hospital is a modern multi-specialty healthcare center committed to providing
+                        high-quality medical care with compassion, expertise, and advanced technology. Our hospital
+                        brings together experienced doctors, specialized medical departments, and modern healthcare
+                        facilities to deliver comprehensive diagnosis, treatment, and preventive healthcare
+                        services.
+                    </p>
+                    <p class="about-section-desc mt-3 aos-init aos-animate" data-aos="fade-left"
+                        data-aos-duration="1100">
+                        We focus on patient-centered healthcare, ensuring that every patient receives personalized
+                        treatment, accurate diagnosis, and continuous medical support. Whether it is routine health
+                        consultation, specialized surgery, or advanced medical treatment, Medicool Hospital strives
+                        to provide safe, ethical, and reliable healthcare services to the community.
+                    </p>
+                </div>
             </div>
+
         </div>
+    </div>
     </div>
     <!--===== ABOUT AREA ENDS =======-->
 
     <!--===== ABOUT Numbers STARTS =======-->
     <div class="about4-section-area pb-5 pt-5" style="background: #F9FBFF;">
         <div class="container">
-<div class="row">
-    <div class="col-md-9 d-flex">
-
             <div class="row">
-                <div class="col-lg-6 col-md-6 mb-4 ">
-                    <div class="premium-counter-box aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h2><span class="counter">200</span>+</h2>
-                            <div class="icon-area">
-                                <i class="fa-solid fa-user-nurse"></i>
-                            </div>
-                        </div>
-                        <p>Serving patients every week</p>
-                    </div>
-                </div>
+                <div class="col-md-9 d-flex">
 
-                <div class="col-lg-6 col-md-6 mb-4 ">
-                    <div class="premium-counter-box aos-init aos-animate" data-aos="fade-up" data-aos-duration="1100">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h2><span class="counter">95</span>%</h2>
-                            <div class="icon-area">
-                                <i class="fa-solid fa-heart-pulse"></i>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 mb-4 ">
+                            <div class="premium-counter-box aos-init aos-animate" data-aos="fade-up"
+                                data-aos-duration="1000">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h2><span class="counter">200</span>+</h2>
+                                    <div class="icon-area">
+                                        <i class="fa-solid fa-user-nurse"></i>
+                                    </div>
+                                </div>
+                                <p>Serving patients every week</p>
                             </div>
                         </div>
-                        <p>Patient satisfaction rate</p>
-                    </div>
-                </div>
 
-                <div class="col-lg-6 col-md-6 mb-4 ">
-                    <div class="premium-counter-box aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h2><span class="counter">5</span>+</h2>
-                            <div class="icon-area">
-                                <i class="fa-solid fa-calendar-check"></i>
+                        <div class="col-lg-6 col-md-6 mb-4 ">
+                            <div class="premium-counter-box aos-init aos-animate" data-aos="fade-up"
+                                data-aos-duration="1100">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h2><span class="counter">95</span>%</h2>
+                                    <div class="icon-area">
+                                        <i class="fa-solid fa-heart-pulse"></i>
+                                    </div>
+                                </div>
+                                <p>Patient satisfaction rate</p>
                             </div>
                         </div>
-                        <p>Years of serving</p>
-                    </div>
-                </div>
 
-                <div class="col-lg-6 col-md-6 mb-4 ">
-                    <div class="premium-counter-box aos-init aos-animate" data-aos="fade-up" data-aos-duration="1300">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h2><span class="counter">24</span>/7</h2>
-                            <div class="icon-area">
-                                <i class="fa-solid fa-truck-medical"></i>
+                        <div class="col-lg-6 col-md-6 mb-4 ">
+                            <div class="premium-counter-box aos-init aos-animate" data-aos="fade-up"
+                                data-aos-duration="1200">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h2><span class="counter">5</span>+</h2>
+                                    <div class="icon-area">
+                                        <i class="fa-solid fa-calendar-check"></i>
+                                    </div>
+                                </div>
+                                <p>Years of serving</p>
                             </div>
                         </div>
-                        <p>Emergency & urgent care</p>
+
+                        <div class="col-lg-6 col-md-6 mb-4 ">
+                            <div class="premium-counter-box aos-init aos-animate" data-aos="fade-up"
+                                data-aos-duration="1300">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h2><span class="counter">24</span>/7</h2>
+                                    <div class="icon-area">
+                                        <i class="fa-solid fa-truck-medical"></i>
+                                    </div>
+                                </div>
+                                <p>Emergency & urgent care</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="about-intro-video-wrapper position-relative mb-4" data-aos="fade-right"
+                        data-aos-duration="1000">
+                        <div class="video-container"
+                            style="border-radius: 24px; overflow: hidden; box-shadow: 0 20px 50px rgba(68, 22, 255, 0.12); border: 2px solid #F4F0FF; background: #000;">
+                            <video id="mainVideo" controls muted playsinline
+                                style="width: 100%; display: block; object-fit: cover; aspect-ratio: 9/16;">
+                                <source src="assets/img/all-images/hero/Hospital_Intro-2.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            </div>
-    <div class="col-md-3">
-        <div class="about-intro-video-wrapper position-relative mb-4" data-aos="fade-right"
-                            data-aos-duration="1000">
-                            <div class="video-container"
-                                style="border-radius: 24px; overflow: hidden; box-shadow: 0 20px 50px rgba(68, 22, 255, 0.12); border: 2px solid #F4F0FF; background: #000;">
-                                <video id="mainVideo" controls muted playsinline
-                                    style="width: 100%; display: block; object-fit: cover; aspect-ratio: 9/16;">
-                                    <source src="assets/img/all-images/hero/Hospital_Intro-2.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-    </div>
-</div>
         </div>
     </div>
     <!--===== ABOUT Numbers ENDS =======-->
+
+    <!--===== ACTIVITIES AREA STARTS =======-->
+    <div class="testimonial4-section-area sp1"
+        style="background-image: url(assets/img/all-images/bg/bg6.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <img loading="lazy" src="assets/img/elements/elements12.png" alt="Decorative background sparkle element"
+            class="elements12 keyframe5">
+        <div class="container border-bottom">
+            <div class="row">
+                <div class="col-lg-8 m-auto">
+                    <div class="heading4 text-center">
+                        <h5 class="vl-section-subtitle">Medicool Hospital<span style="color: var(--ztc-text-text-11)"> |
+                            </span> Our Activities
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8"
+                                fill="none">
+                                <path d="M0.667969 4.00033H11.049M8.00137 7.33366L11.3346 4.00033L8.0013 0.666992"
+                                    stroke="#02015A" stroke-width="1.5"></path>
+                            </svg>
+                        </h5>
+                        <div class="space24"></div>
+                        <h2 class="vl-section-title about-section-title" data-aos="fade-left" data-aos-duration="900">
+                            School Visits
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-lg-12">
+
+                    <div class="activity-masonry">
+
+                        <!-- IMAGE -->
+                        <div class="activity-item">
+                            <a href="assets/img/all-images/Medical Camp/School Visits/Photo1.jpeg" class="popup-image">
+                                <img src="assets/img/all-images/Medical Camp/School Visits/Photo1.jpeg"
+                                    alt="School Visit Image 1">
+                            </a>
+                        </div>
+
+                        <!-- VIDEO (MP4) -->
+                        <div class="activity-item">
+                            <a href="assets/img/all-images/Medical Camp/School Visits/video1.mp4" class="popup-video">
+                                <div class="video-thumb">
+                                    <video src="assets/img/all-images/Medical Camp/School Visits/video1.mp4#t=0.5" muted playsinline style="width: 100%; display: block; border-radius: 16px; pointer-events: none;"></video>
+                                    <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- VIDEO (MP4) -->
+                        <div class="activity-item">
+                            <a href="assets/img/all-images/Medical Camp/School Visits/video2.mp4" class="popup-video">
+                                <div class="video-thumb">
+                                    <video src="assets/img/all-images/Medical Camp/School Visits/video2.mp4#t=0.5" muted playsinline style="width: 100%; display: block; border-radius: 16px; pointer-events: none;"></video>
+                                    <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+         <div class="container pb-5 pt-5">
+            <div class="row">
+                <div class="col-lg-8 m-auto">
+                    <div class="heading4 text-center">
+                        <h2 class="vl-section-title about-section-title" data-aos="fade-left" data-aos-duration="900">
+                          Medical Camp
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-12">
+
+                    <div class="activity-masonry">
+
+                        <!-- IMAGE -->
+                        <div class="activity-item">
+                            <a href="assets/img/all-images/Medical Camp/Medical Camp/photo10.jpeg" class="popup-image">
+                                <img src="assets/img/all-images/Medical Camp/Medical Camp/photo10.jpeg"
+                                    alt="Medical Camp Image 10">
+                            </a>
+                        </div>
+
+                        <!-- IMAGE -->
+                        <div class="activity-item">
+                            <a href="assets/img/all-images/Medical Camp/Medical Camp/photo11.jpeg" class="popup-image">
+                                <img src="assets/img/all-images/Medical Camp/Medical Camp/photo11.jpeg"
+                                    alt="Medical Camp Image 11">
+                            </a>
+                        </div>
+                        
+   <!-- VIDEO (MP4) -->
+                        <div class="activity-item">
+                            <a href="assets/img/all-images/Medical Camp/Medical Camp/Video1.mp4" class="popup-video">
+                                <div class="video-thumb">
+                                    <video src="assets/img/all-images/Medical Camp/Medical Camp/Video1.mp4#t=0.5" muted playsinline style="width: 100%; display: block; border-radius: 16px; pointer-events: none;"></video>
+                                    <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- IMAGE -->
+                        <div class="activity-item">
+                            <a href="assets/img/all-images/Medical Camp/Medical Camp/photo13.jpeg" class="popup-image">
+                                <img src="assets/img/all-images/Medical Camp/Medical Camp/photo13.jpeg"
+                                    alt="Medical Camp Image 13">
+                            </a>
+                        </div>
+
+                        <!-- IMAGE -->
+                        <div class="activity-item">
+                            <a href="assets/img/all-images/Medical Camp/Medical Camp/photo14.jpeg" class="popup-image">
+                                <img src="assets/img/all-images/Medical Camp/Medical Camp/photo14.jpeg"
+                                    alt="Medical Camp Image 14">
+                            </a>
+                        </div>
+
+                     
+
+                        <!-- VIDEO (MP4) -->
+                        <div class="activity-item">
+                            <a href="assets/img/all-images/Medical Camp/Medical Camp/Video2.mp4" class="popup-video">
+                                <div class="video-thumb">
+                                    <video src="assets/img/all-images/Medical Camp/Medical Camp/Video2.mp4#t=0.5" muted playsinline style="width: 100%; display: block; border-radius: 16px; pointer-events: none;"></video>
+                                    <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===== ACTIVITIES AREA ENDS =======-->
 
 
     <!--===== MISSION VISION AREA STARTS =======-->
@@ -1147,43 +1357,9 @@
     <!--===== WHY CHOOSE US AREA ENDS =======-->
 
 
-    <!--===== TESTIMONIAL AREA STARTS =======-->
-    <div class="testimonial4-section-area sp1"
-        style="background-image: url(assets/img/all-images/bg/bg6.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
-        <img loading="lazy" src="assets/img/elements/elements12.png" alt="Decorative background sparkle element"
-            class="elements12 keyframe5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 m-auto">
-                    <div class="heading4 text-center">
-                        <h5 class="vl-section-subtitle">Medicool Hospital<span style="color: var(--ztc-text-text-11)"> |
-                            </span> Google
-                            Reviews<svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8"
-                                fill="none">
-                                <path d="M0.667969 4.00033H11.049M8.00137 7.33366L11.3346 4.00033L8.0013 0.666992"
-                                    stroke="#02015A" stroke-width="1.5"></path>
-                            </svg>
-                        </h5>
-                        <div class="space24"></div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Elfsight Google Reviews | Untitled Google Reviews -->
-                    <script src="https://elfsightcdn.com/platform.js" async></script>
-                    <div class="elfsight-app-6ba56a0b-e87e-44e0-bdc1-5d23f83e24fd" data-elfsight-app-lazy></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--===== TESTIMONIAL AREA ENDS =======-->
-
     <!-- ===== CONTACT AREA STARTS ===== -->
 
-    <div class="contact-inner-section-area sp2" style="padding: 80px 0;">
+    <!-- <div class="contact-inner-section-area sp2" style="padding: 80px 0;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 m-auto">
@@ -1215,7 +1391,7 @@
                 </div>
                 <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1000">
                     <div class="row g-4 mb-4">
-                        <!-- Phone Card -->
+                       
                         <div class="col-md-6">
                             <div class="contact-card p-4 rounded-4"
                                 style="background: white; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 5px 20px rgba(0,0,0,0.03); transition: all 0.3s ease; height: 100%;"
@@ -1233,7 +1409,8 @@
                                 </div>
                                 <h5 style="color: #31353D; font-weight: 600; margin-bottom: 5px;">Call Us</h5>
                                 <a href="tel:+919834889938"
-                                    style="color: #6c757d; text-decoration: none; font-size: 1.1rem; display: block;">+91 98348 89938</a>
+                                    style="color: #6c757d; text-decoration: none; font-size: 1.1rem; display: block;">+91
+                                    98348 89938</a>
                                 <div class="mt-3">
                                     <a href="tel:+919834889938" class="btn btn-primary btn-sm rounded-pill px-4"
                                         style="background: var(--ztc-text-text-11); border: none;">Call Now</a>
@@ -1241,7 +1418,7 @@
                             </div>
                         </div>
 
-                        <!-- Email Card -->
+                     
                         <div class="col-md-6">
                             <div class="contact-card p-4 rounded-4"
                                 style="background: white; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 5px 20px rgba(0,0,0,0.03); transition: all 0.3s ease; height: 100%;"
@@ -1268,7 +1445,7 @@
                             </div>
                         </div>
 
-                        <!-- Timing Card -->
+                      
                         <div class="col-md-12">
                             <div class="contact-card p-4 rounded-4"
                                 style="background: white; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 5px 20px rgba(0,0,0,0.03); transition: all 0.3s ease;"
@@ -1311,7 +1488,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- ===== CONTACT AREA ENDS ===== -->
 
@@ -1413,10 +1590,12 @@
                         <!-- SOCIAL LINKS -->
                         <ul class="social-links">
                             <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/barkha-kukreja-81a454209/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/barkha-kukreja-81a454209/"><i
+                                        class="fa-brands fa-linkedin-in"></i></a></li>
                             <li><a href="https://www.instagram.com/medicool.hospital"><i
                                         class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="https://www.youtube.com/@barkhakukreja1637"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="https://www.youtube.com/@barkhakukreja1637"><i
+                                        class="fa-brands fa-youtube"></i></a></li>
                         </ul>
 
                     </div>
@@ -1684,6 +1863,24 @@
                     rewind: true,
                 }).mount();
             }
+
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // IMAGE LIGHTBOX
+            $('.popup-image').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+
+            // VIDEO LIGHTBOX
+            $('.popup-video').magnificPopup({
+                type: 'iframe'
+            });
 
         });
     </script>
